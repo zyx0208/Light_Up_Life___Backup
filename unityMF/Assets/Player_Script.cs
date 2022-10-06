@@ -10,7 +10,7 @@ public class Player_Script : MonoBehaviour
     public float speed = 5f; //ĳ������ �̵��ӵ�
 
     public double AttackCooldown = 0.5;
-
+    public Rigidbody rigidbody;
     private double timer = 0.0;
 
     void Awake() //총알발사 사운드 
@@ -20,7 +20,7 @@ public class Player_Script : MonoBehaviour
 
     void Start()
     {
-        this.transform.position = new Vector3(0, 1, 0); //��ġ �ʱ�ȭ
+        this.transform.position = new Vector3(0, 3, 0); //��ġ �ʱ�ȭ
         this.transform.rotation = Quaternion.Euler(0, 0, 0); //���� �ʱ�ȭ
         this.GetComponent<Transform>();
     }
@@ -47,7 +47,7 @@ public class Player_Script : MonoBehaviour
 
         //�������
         Vector3 mPosition = Camera.main.WorldToScreenPoint(this.transform.position); //ī�޶� ���� ���� �������� ���콺����Ʈ ��ǥ�� mPosition�� ����
-        this.transform.LookAt(new Vector3(-Input.mousePosition.x + mPosition.x, 0, -Input.mousePosition.y + mPosition.y)); //�÷��̾�� ���콺�� ��ġ�� ���Ͽ� ���콺�� �ٶ󺸵��� ����
+        this.transform.LookAt(new Vector3(-(-Input.mousePosition.x + mPosition.x), 0, -(-Input.mousePosition.y + mPosition.y))); //�÷��̾�� ���콺�� ��ġ�� ���Ͽ� ���콺�� �ٶ󺸵��� ����
     }
 
     private void FixedUpdate()

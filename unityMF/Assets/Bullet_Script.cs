@@ -16,7 +16,7 @@ public class Bullet_Script : MonoBehaviour
 
     void Update()
     {
-        Vector3 angle = transform.forward * -1;
+        Vector3 angle = transform.forward;
         transform.position += angle * speed * Time.deltaTime;
         if (timer > 0)
         {
