@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class Bullet_Script : MonoBehaviour
 {
-    private float disappear_time = 2;
-    public float speed = 30f;
+    public float disappear_time = 2; //총알이 발사된 후 최대 존재 시간
+    public float speed = 30f; //총알의 속도
     private double timer = 0.0;
 
     void Start()
