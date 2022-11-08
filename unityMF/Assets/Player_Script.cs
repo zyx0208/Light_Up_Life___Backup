@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class Player_Script : MonoBehaviour
 {
-    AudioSource bulletSound; 
+    AudioSource bulletSound;
+    Animator animator;
 
     public GameObject bullet;
     public float speed = 5f; //플레이어블 캐릭터의 이동속도
@@ -28,19 +29,19 @@ public class Player_Script : MonoBehaviour
     void Update()
     {
         //이동관련
-        if ((Input.GetKey(KeyCode.LeftArrow)) || (Input.GetKey(KeyCode.A))) //왼쪽 이동
+        if (Input.GetKey(KeyCode.A)) //왼쪽 이동
         {
             transform.Translate(-speed * Time.deltaTime, 0, 0, Space.World); //cpu마다의 성능 격차를 해소하기 위해 Time.deltaTime를 곱해서 사용 // Space.World : 절대좌표
         }
-        if ((Input.GetKey(KeyCode.RightArrow)) || (Input.GetKey(KeyCode.D))) //오른쪽 이동
+        if (Input.GetKey(KeyCode.D)) //오른쪽 이동
         {
             transform.Translate(speed * Time.deltaTime, 0, 0, Space.World);
         }
-        if ((Input.GetKey(KeyCode.UpArrow)) || (Input.GetKey(KeyCode.W))) //위쪽 이동
+        if (Input.GetKey(KeyCode.W)) //위쪽 이동
         {
             transform.Translate(0, 0, speed * Time.deltaTime, Space.World);
         }
-        if ((Input.GetKey(KeyCode.DownArrow)) || (Input.GetKey(KeyCode.S))) //아래쪽 이동
+        if (Input.GetKey(KeyCode.S)) //아래쪽 이동
         {
             transform.Translate(0, 0, -speed * Time.deltaTime, Space.World);
         }
