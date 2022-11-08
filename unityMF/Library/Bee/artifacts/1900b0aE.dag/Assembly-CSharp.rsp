@@ -356,6 +356,16 @@
 "Assets/Main_Camera_Script.cs"
 "Assets/Player_Script.cs"
 "Assets/Status_Script.cs"
+"Assets/에셋스토어/Fireworks/Firecracker 1/Script/Firecracker1.cs"
+"Assets/에셋스토어/Fireworks/Firecracker 2/Script/Firecracker2.cs"
+"Assets/에셋스토어/Fireworks/Firecracker 3/Script/Firecracker3.cs"
+"Assets/에셋스토어/Fireworks/Rocket 1/Script/Rocket1.cs"
+"Assets/에셋스토어/Fireworks/Rocket 2/Script/Rocket2.cs"
+"Assets/에셋스토어/Fireworks/Rocket 3/Script/Rocket3.cs"
+"Assets/에셋스토어/Fireworks/Rocket 4/Script/Rocket4.cs"
+"Assets/에셋스토어/Fireworks/Rocket 5/Script/Rocket5.cs"
+"Assets/에셋스토어/OccaSoftware/Enflame/Scripts/OscillateLightBrightness.cs"
+"Assets/에셋스토어/OccaSoftware/Enflame/Scripts/VolumetricFire.cs"
 -langversion:9.0
 
 /deterministic

@@ -230,12 +230,12 @@ GameObject:
   - component: {fileID: 49836778}
   - component: {fileID: 49836777}
   m_Layer: 0
-  m_Name: Walls_4
+  m_Name: (temp)Walls_4
   m_TagString: Walls
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!65 &49836777
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -366,7 +366,19 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5082574569444486177, guid: c564c8c0d0cdc45429417f315e9f3e41, type: 3}
+      propertyPath: m_Avatar
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5082574569444486177, guid: c564c8c0d0cdc45429417f315e9f3e41, type: 3}
       propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5082574569444486177, guid: c564c8c0d0cdc45429417f315e9f3e41, type: 3}
+      propertyPath: m_UpdateMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5082574569444486177, guid: c564c8c0d0cdc45429417f315e9f3e41, type: 3}
+      propertyPath: m_ApplyRootMotion
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5352958571798197664, guid: c564c8c0d0cdc45429417f315e9f3e41, type: 3}
@@ -388,12 +400,12 @@ GameObject:
   - component: {fileID: 484339311}
   - component: {fileID: 484339310}
   m_Layer: 0
-  m_Name: Walls_3
+  m_Name: (temp)Walls_3
   m_TagString: Walls
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!65 &484339310
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -491,7 +503,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &736587684
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -845,12 +857,12 @@ GameObject:
   - component: {fileID: 1144696042}
   - component: {fileID: 1144696041}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: (temp)Plane
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!64 &1144696041
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -1044,6 +1056,14 @@ PrefabInstance:
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 767562868964138845, guid: 7baba197ce36c92439b423eabaad3737, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 767562868964138845, guid: 7baba197ce36c92439b423eabaad3737, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 767562868964138845, guid: 7baba197ce36c92439b423eabaad3737, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
@@ -1098,12 +1118,12 @@ GameObject:
   - component: {fileID: 1341153555}
   - component: {fileID: 1341153554}
   m_Layer: 0
-  m_Name: Walls_1
+  m_Name: (temp)Walls_1
   m_TagString: Walls
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!65 &1341153554
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1200,7 +1220,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!65 &1455316235
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1292,12 +1312,12 @@ GameObject:
   - component: {fileID: 1690987068}
   - component: {fileID: 1690987067}
   m_Layer: 0
-  m_Name: Walls_2
+  m_Name: (temp)Walls_2
   m_TagString: Walls
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!65 &1690987067
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1392,7 +1412,7 @@ GameObject:
   - component: {fileID: 2079535967}
   - component: {fileID: 2079535968}
   m_Layer: 0
-  m_Name: player(temp)
+  m_Name: (temp)player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1623,7 +1643,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!135 &2082505868
 SphereCollider:
   m_ObjectHideFlags: 0
