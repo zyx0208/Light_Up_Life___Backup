@@ -56,16 +56,16 @@ AnimatorStateMachine:
   m_ChildStates:
   - serializedVersion: 1
     m_State: {fileID: 182167876251723365}
-    m_Position: {x: 280, y: 100, z: 0}
+    m_Position: {x: 210, y: 90, z: 0}
   m_ChildStateMachines: []
   m_AnyStateTransitions: []
   m_EntryTransitions:
   - {fileID: -8836381659727851427}
   m_StateMachineTransitions: {}
   m_StateMachineBehaviours: []
-  m_AnyStatePosition: {x: 50, y: 20, z: 0}
-  m_EntryPosition: {x: 50, y: 70, z: 0}
-  m_ExitPosition: {x: 50, y: -30, z: 0}
+  m_AnyStatePosition: {x: -50, y: 310, z: 0}
+  m_EntryPosition: {x: -50, y: 80, z: 0}
+  m_ExitPosition: {x: -20, y: 10, z: 0}
   m_ParentStateMachinePosition: {x: 800, y: 20, z: 0}
   m_DefaultState: {fileID: 182167876251723365}
 --- !u!91 &9100000
@@ -78,7 +78,7 @@ AnimatorController:
   serializedVersion: 5
   m_AnimatorParameters:
   - m_Name: IsMoving
-    m_Type: 3
+    m_Type: 1
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
@@ -118,10 +118,10 @@ AnimatorState:
   m_TimeParameterActive: 0
   m_Motion: {fileID: -9060895246378608820}
   m_Tag: 
-  m_SpeedParameter: 
+  m_SpeedParameter: IsMoving
   m_MirrorParameter: 
   m_CycleOffsetParameter: 
-  m_TimeParameter: 
+  m_TimeParameter: IsMoving
 --- !u!206 &1862164815659856796
 BlendTree:
   m_ObjectHideFlags: 1
