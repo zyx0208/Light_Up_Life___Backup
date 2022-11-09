@@ -11,7 +11,7 @@ public class Player_Script : MonoBehaviour
     public float speed = 5f; //플레이어블 캐릭터의 이동속도
 
     public double AttackCooldown = 0.5; //총알 발사 딜레이
-    public Rigidbody rigidbody_; //"rigidbody"라는 이름이 시스템에서 다른 용도로 사용 중이라서 언더바 추가
+    public Rigidbody rigidbody;
     private double timer = 0.0;
 
     void Awake() //총알발사 사운드 
@@ -21,10 +21,9 @@ public class Player_Script : MonoBehaviour
 
     void Start()
     {
-        this.transform.position = new Vector3(0, 1, 0); //시작점 설정
+        this.transform.position = new Vector3(0, 3, 0); //시작점 설정
         this.transform.rotation = Quaternion.Euler(0, 0, 0); //시작 각도 설정(웬만하면 0, 0, 0으로)
         this.GetComponent<Transform>();
-        animator = this.GetComponent<Animator>();
     }
 
     void Update()
@@ -33,26 +32,18 @@ public class Player_Script : MonoBehaviour
         if (Input.GetKey(KeyCode.A)) //왼쪽 이동
         {
             transform.Translate(-speed * Time.deltaTime, 0, 0, Space.World); //cpu마다의 성능 격차를 해소하기 위해 Time.deltaTime를 곱해서 사용 // Space.World : 절대좌표
-            animator.SetFloat("IsMoving", 1f);
         }
         if (Input.GetKey(KeyCode.D)) //오른쪽 이동
         {
             transform.Translate(speed * Time.deltaTime, 0, 0, Space.World);
-            animator.SetFloat("IsMoving", 1f);
         }
         if (Input.GetKey(KeyCode.W)) //위쪽 이동
         {
             transform.Translate(0, 0, speed * Time.deltaTime, Space.World);
-            animator.SetFloat("IsMoving", 1f);
         }
         if (Input.GetKey(KeyCode.S)) //아래쪽 이동
         {
             transform.Translate(0, 0, -speed * Time.deltaTime, Space.World);
-            animator.SetFloat("IsMoving", 1f);
-        }
-        if ((!Input.GetKey(KeyCode.A)) && (!Input.GetKey(KeyCode.D)) && (!Input.GetKey(KeyCode.W)) && (!Input.GetKey(KeyCode.S))) //움직이지 않을 때
-        {
-            animator.SetFloat("IsMoving", 0f);
         }
 
         //시점관련
