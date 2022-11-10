@@ -355,6 +355,7 @@
 "Assets/Bullet_Script.cs"
 "Assets/Main_Camera_Script.cs"
 "Assets/Player_Script.cs"
+"Assets/Startbutton_UI_Script.cs"
 "Assets/Status_Script.cs"
 "Assets/에셋스토어/Fireworks/Firecracker 1/Script/Firecracker1.cs"
 "Assets/에셋스토어/Fireworks/Firecracker 2/Script/Firecracker2.cs"
