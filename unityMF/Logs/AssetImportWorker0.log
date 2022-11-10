@@ -1,0 +1,817 @@
+Using pre-set license
+Built from '2021.3/staging' branch; Version is '2021.3.11f1 (0a5ca18544bf) revision 679073'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19044) 64bit Professional' Language: 'ko' Physical Memory: 16188 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2021.3.11f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+C:/Users/aaaa/Desktop/학교/깃허브/유니티 팀플/MandarinFarm/unityMF
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+13367
+Successfully changed project path to: C:/Users/aaaa/Desktop/학교/깃허브/유니티 팀플/MandarinFarm/unityMF
+C:/Users/aaaa/Desktop/학교/깃허브/유니티 팀플/MandarinFarm/unityMF
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Refreshing native plugins compatible for Editor in 130.47 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2021.3.11f1 (0a5ca18544bf)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.11f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/aaaa/Desktop/학교/깃허브/유니티 팀플/MandarinFarm/unityMF/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce GTX 1660 Ti (ID=0x2191)
+    Vendor:   NVIDIA
+    VRAM:     5991 MB
+    Driver:   31.0.15.2225
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.11f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.11f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.11f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56556
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.11f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.11f1/Editor/Data/PlaybackEngines/MetroSupport/UnityEditor.UWP.Extensions.dll
+Registered in 0.022912 seconds.
+Native extension for UWP target not found
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 116.95 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.960 seconds
+Domain Reload Profiling:
+	ReloadAssembly (961ms)
+		BeginReloadAssembly (109ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (662ms)
+			LoadAssemblies (105ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (151ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (41ms)
+			SetupLoadedEditorAssemblies (391ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (14ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (117ms)
+				BeforeProcessingInitializeOnLoad (2ms)
+				ProcessInitializeOnLoadAttributes (186ms)
+				ProcessInitializeOnLoadMethodAttributes (71ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.011236 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\aaaa\Desktop\학교\깃허브\유니티 팀플\MandarinFarm\unityMF\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\aaaa\Desktop\학교\깃허브\유니티 팀플\MandarinFarm\unityMF\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for UWP target not found
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.71 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.549 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1550ms)
+		BeginReloadAssembly (173ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (8ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (27ms)
+		EndReloadAssembly (1200ms)
+			LoadAssemblies (123ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (409ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (71ms)
+			SetupLoadedEditorAssemblies (540ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (11ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (134ms)
+				ProcessInitializeOnLoadAttributes (332ms)
+				ProcessInitializeOnLoadMethodAttributes (46ms)
+				AfterProcessingInitializeOnLoad (15ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (12ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
+Refreshing native plugins compatible for Editor in 0.73 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3394 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 25 unused Assets / (56.9 KB). Loaded Objects now: 3860.
+Memory consumption went from 195.6 MB to 195.6 MB.
+Total: 4.241700 ms (FindLiveObjects: 0.328700 ms CreateObjectMapping: 0.253700 ms MarkObjects: 3.568200 ms  DeleteObjects: 0.090100 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 1977922.549518 seconds.
+  path: Assets/Bullet.prefab
+  artifactKey: Guid(831c0af8e517b794baddc845180a8b97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bullet.prefab using Guid(831c0af8e517b794baddc845180a8b97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '72c77d3d647cc49b95ce97c8e226e4d0') in 0.162897 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.011136 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\aaaa\Desktop\학교\깃허브\유니티 팀플\MandarinFarm\unityMF\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\aaaa\Desktop\학교\깃허브\유니티 팀플\MandarinFarm\unityMF\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for UWP target not found
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.87 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.690 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1691ms)
+		BeginReloadAssembly (197ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (7ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (45ms)
+		EndReloadAssembly (1314ms)
+			LoadAssemblies (142ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (458ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (70ms)
+			SetupLoadedEditorAssemblies (559ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (26ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (126ms)
+				ProcessInitializeOnLoadAttributes (339ms)
+				ProcessInitializeOnLoadMethodAttributes (48ms)
+				AfterProcessingInitializeOnLoad (18ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (17ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 3.20 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3387 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 18 unused Assets / (24.6 KB). Loaded Objects now: 3872.
+Memory consumption went from 199.8 MB to 199.8 MB.
+Total: 4.110900 ms (FindLiveObjects: 0.397000 ms CreateObjectMapping: 0.271600 ms MarkObjects: 3.414100 ms  DeleteObjects: 0.027400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 811.465310 seconds.
+  path: Assets/에셋스토어/Fireworks
+  artifactKey: Guid(e07f74a5e5edbc949924429b858c6645) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/에셋스토어/Fireworks using Guid(e07f74a5e5edbc949924429b858c6645) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '987ec87bd7ab589d2fe714942a232d20') in 0.018639 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 14.655479 seconds.
+  path: Assets/에셋스토어/Fireworks/Animations
+  artifactKey: Guid(9308b2d5cb6a57441837bcccb842e433) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/에셋스토어/Fireworks/Animations using Guid(9308b2d5cb6a57441837bcccb842e433) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b9cf3b7f6b1975c940096192ed363b79') in 0.008264 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.184424 seconds.
+  path: Assets/에셋스토어/Fireworks/Animations/Böller 1 zündschnur.controller
+  artifactKey: Guid(9a3b30f96dfb0b64695aa013cbb47a3a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/에셋스토어/Fireworks/Animations/Böller 1 zündschnur.controller using Guid(9a3b30f96dfb0b64695aa013cbb47a3a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '635e390cae6758a413dea7d4145f8c37') in 0.028122 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.136583 seconds.
+  path: Assets/에셋스토어/Fireworks/Animations/Böller 3 zündschnur.controller
+  artifactKey: Guid(ba68095c780da2b4d978d351b4b0974f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/에셋스토어/Fireworks/Animations/Böller 3 zündschnur.controller using Guid(ba68095c780da2b4d978d351b4b0974f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c7a237b5b72ebaea718626a776dc7ad') in 0.008967 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.090646 seconds.
+  path: Assets/에셋스토어/Fireworks/Animations/Fuse Firecracker 3.anim
+  artifactKey: Guid(3ba373e1cf19cb644a62d61baca18a38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/에셋스토어/Fireworks/Animations/Fuse Firecracker 3.anim using Guid(3ba373e1cf19cb644a62d61baca18a38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '45b5c04ba0737d4c8194823fa9454164') in 0.011054 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.834853 seconds.
+  path: Assets/에셋스토어/Fireworks/Animations/Fuse Object Firecracker 3.anim
+  artifactKey: Guid(891416baf09ccda46aa28575fc8c5df8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/에셋스토어/Fireworks/Animations/Fuse Object Firecracker 3.anim using Guid(891416baf09ccda46aa28575fc8c5df8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ca9bef58f4e54cd8f6512fdfd1c18fb7') in 0.009212 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 8.361498 seconds.
+  path: Assets/에셋스토어/Fireworks/Rocket 1
+  artifactKey: Guid(df95f1dc054a5bc4ea2cf7a8d0ef5564) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/에셋스토어/Fireworks/Rocket 1 using Guid(df95f1dc054a5bc4ea2cf7a8d0ef5564) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'acc4cfb00964b36b33b9b4b4dac2ae94') in 0.008278 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.024867 seconds.
+  path: Assets/에셋스토어/OccaSoftware
+  artifactKey: Guid(95a6bad8343ae854fb48b7fa8e53a789) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/에셋스토어/OccaSoftware using Guid(95a6bad8343ae854fb48b7fa8e53a789) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd40c5749e8af840d86555250a34f0109') in 0.009612 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 11.617250 seconds.
+  path: Assets/에셋스토어/RPG Tiny Hero Duo/Prefab
+  artifactKey: Guid(349a7771185191b418b97051fee521cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/에셋스토어/RPG Tiny Hero Duo/Prefab using Guid(349a7771185191b418b97051fee521cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '80a21c930f76c7ddccb45cef0cf611ec') in 0.008709 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.024890 seconds.
+  path: Assets/에셋스토어/RPG Tiny Hero Duo/Prefab/FemaleCharacterPBR.prefab
+  artifactKey: Guid(cc91c8ba8b9a34f4d99e70d721f60b64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/에셋스토어/RPG Tiny Hero Duo/Prefab/FemaleCharacterPBR.prefab using Guid(cc91c8ba8b9a34f4d99e70d721f60b64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd988145618834570165cb29635bb342c') in 0.399333 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/에셋스토어/RPG Tiny Hero Duo/Prefab/MaleCharacterPolyart.prefab
+  artifactKey: Guid(c564c8c0d0cdc45429417f315e9f3e41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/에셋스토어/RPG Tiny Hero Duo/Prefab/MaleCharacterPolyart.prefab using Guid(c564c8c0d0cdc45429417f315e9f3e41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '062cc617838452e6a60087a667749bca') in 0.054264 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000045 seconds.
+  path: Assets/에셋스토어/RPG Tiny Hero Duo/Prefab/Shield05Polyart.prefab
+  artifactKey: Guid(f06068434cc02c941bd2b282c8d154ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/에셋스토어/RPG Tiny Hero Duo/Prefab/Shield05Polyart.prefab using Guid(f06068434cc02c941bd2b282c8d154ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '932703311309d5654773b6e9b5f36e57') in 0.024967 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/에셋스토어/RPG Tiny Hero Duo/Prefab/OHS03Polyart.prefab
+  artifactKey: Guid(f0aae4c8b38e02e48a4124483b105340) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/에셋스토어/RPG Tiny Hero Duo/Prefab/OHS03Polyart.prefab using Guid(f0aae4c8b38e02e48a4124483b105340) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '09ace719acea08f89351cdac2171f1b6') in 0.025751 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/에셋스토어/RPG Tiny Hero Duo/Prefab/OHS06Polyart.prefab
+  artifactKey: Guid(a611871aa4f987941bf934736c0ee6d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/에셋스토어/RPG Tiny Hero Duo/Prefab/OHS06Polyart.prefab using Guid(a611871aa4f987941bf934736c0ee6d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '215fec90a5fea6dabe388cf261ad60f8') in 0.023513 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/에셋스토어/RPG Tiny Hero Duo/Prefab/Shield05PBR.prefab
+  artifactKey: Guid(ac86f8ddca59acb4184d3eb42067bafa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/에셋스토어/RPG Tiny Hero Duo/Prefab/Shield05PBR.prefab using Guid(ac86f8ddca59acb4184d3eb42067bafa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cbcd4ea480af33c4ae4da49d0b2a4cf1') in 0.025621 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/에셋스토어/RPG Tiny Hero Duo/Prefab/OHS03PBR.prefab
+  artifactKey: Guid(9fbe61d1f4bc091439f25f985dd189a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/에셋스토어/RPG Tiny Hero Duo/Prefab/OHS03PBR.prefab using Guid(9fbe61d1f4bc091439f25f985dd189a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3a87565f2b6801401a8c5861ddb2b7aa') in 0.022941 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 21.842071 seconds.
+  path: Assets/에셋스토어/Player_assets
+  artifactKey: Guid(fcfefe64dfde1284286b1bb8b0e73998) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/에셋스토어/Player_assets using Guid(fcfefe64dfde1284286b1bb8b0e73998) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'db4d4889dcee31606078dd4df4d2aa18') in 0.008009 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.521807 seconds.
+  path: Assets/에셋스토어/Buttons
+  artifactKey: Guid(9625cc98002d878438b7d8c0de44a94d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/에셋스토어/Buttons using Guid(9625cc98002d878438b7d8c0de44a94d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2bc5f94b47bb429f0c107d4e4dcecde9') in 0.008216 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.040290 seconds.
+  path: Assets/에셋스토어/Buttons/buttons.png
+  artifactKey: Guid(9d6738d80b1a977408aa93f3e5b08f36) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/에셋스토어/Buttons/buttons.png using Guid(9d6738d80b1a977408aa93f3e5b08f36) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e3c44fb9349e2f2a4af76581a79d2b8d') in 0.294197 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/에셋스토어/Buttons/buttons_Back.png
+  artifactKey: Guid(a3d7e7cfe6097ac49970377cbf78158f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/에셋스토어/Buttons/buttons_Back.png using Guid(a3d7e7cfe6097ac49970377cbf78158f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4c6324bb6afafe54100b2ce2aed44be7') in 0.202534 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 18.059625 seconds.
+  path: Assets/에셋스토어/UI_assets
+  artifactKey: Guid(9625cc98002d878438b7d8c0de44a94d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/에셋스토어/UI_assets using Guid(9625cc98002d878438b7d8c0de44a94d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2bb69d07d4c61ffb72dda5154ad250ec') in 0.008988 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.501876 seconds.
+  path: Assets/에셋스토어/Pure Poly
+  artifactKey: Guid(f44630dbc8075224ca59b5f37a910710) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/에셋스토어/Pure Poly using Guid(f44630dbc8075224ca59b5f37a910710) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2a11a1b8661a20279e7e2c51fdb12beb') in 0.008372 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.704512 seconds.
+  path: Assets/에셋스토어/Pure Poly/Free Low Poly Nature Pack
+  artifactKey: Guid(7cdfeed40386de545b6e8d8bbc6d1507) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/에셋스토어/Pure Poly/Free Low Poly Nature Pack using Guid(7cdfeed40386de545b6e8d8bbc6d1507) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c9f94e6a258ec18af058e53a0dd91d17') in 0.008494 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.977475 seconds.
+  path: Assets/에셋스토어/Pure Poly/Free Low Poly Nature Pack/Materials
+  artifactKey: Guid(8ebb527547e00834bb38dd05f7664656) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/에셋스토어/Pure Poly/Free Low Poly Nature Pack/Materials using Guid(8ebb527547e00834bb38dd05f7664656) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '47c8a6a4e1e84f5ca7fba43110824370') in 0.010216 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.250531 seconds.
+  path: Assets/에셋스토어/Pure Poly/Free Low Poly Nature Pack/Prefabs
+  artifactKey: Guid(33d9da17d5975244db32a765fa368621) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/에셋스토어/Pure Poly/Free Low Poly Nature Pack/Prefabs using Guid(33d9da17d5975244db32a765fa368621) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dc6e0834fb1e0f2bafeb9188ec0a4cb2') in 0.008944 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.081031 seconds.
+  path: Assets/에셋스토어/Pure Poly/Free Low Poly Nature Pack/Prefabs/PP_Birch_Tree_05.prefab
+  artifactKey: Guid(2554008d6447a2540b44e55f0c0b576e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/에셋스토어/Pure Poly/Free Low Poly Nature Pack/Prefabs/PP_Birch_Tree_05.prefab using Guid(2554008d6447a2540b44e55f0c0b576e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fa1bcf3b1e7afa0f41bb21fbe412cfdd') in 0.043062 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/에셋스토어/Pure Poly/Free Low Poly Nature Pack/Prefabs/PP_Forest_Mountain_Moss_01.prefab
+  artifactKey: Guid(512b72c73a22e904d87662ebca8eb1e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/에셋스토어/Pure Poly/Free Low Poly Nature Pack/Prefabs/PP_Forest_Mountain_Moss_01.prefab using Guid(512b72c73a22e904d87662ebca8eb1e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '129418108ed4318bb059d6660a4a582b') in 0.026020 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/에셋스토어/Pure Poly/Free Low Poly Nature Pack/Prefabs/PP_Meadow_07.prefab
+  artifactKey: Guid(cf22a2db10f09a34495e9f83913738c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/에셋스토어/Pure Poly/Free Low Poly Nature Pack/Prefabs/PP_Meadow_07.prefab using Guid(cf22a2db10f09a34495e9f83913738c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4162c722c60ceab1141ad8ce62ab7f2e') in 0.024097 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/에셋스토어/Pure Poly/Free Low Poly Nature Pack/Prefabs/PP_Mushroom_Fantasy_Purple_05.prefab
+  artifactKey: Guid(d354c41a99993964baca0254487708d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/에셋스토어/Pure Poly/Free Low Poly Nature Pack/Prefabs/PP_Mushroom_Fantasy_Purple_05.prefab using Guid(d354c41a99993964baca0254487708d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bbabe23998ed11e0d48f1ed5ee0370bc') in 0.023255 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/에셋스토어/Pure Poly/Free Low Poly Nature Pack/Prefabs/PP_Sunflower_04.prefab
+  artifactKey: Guid(18bb023d75a113f4cb8d1452371f5c0e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/에셋스토어/Pure Poly/Free Low Poly Nature Pack/Prefabs/PP_Sunflower_04.prefab using Guid(18bb023d75a113f4cb8d1452371f5c0e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fe2fde8daaca94a89ffcc69b95b7c8ca') in 0.026909 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/에셋스토어/Pure Poly/Free Low Poly Nature Pack/Prefabs/PP_Rock_Moss_Grown_09.prefab
+  artifactKey: Guid(24457fdf8e66c3c49b7599931e0fdcb2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/에셋스토어/Pure Poly/Free Low Poly Nature Pack/Prefabs/PP_Rock_Moss_Grown_09.prefab using Guid(24457fdf8e66c3c49b7599931e0fdcb2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '199db05c800503b9be0a57ed7813fe34') in 0.029920 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/에셋스토어/Pure Poly/Free Low Poly Nature Pack/Prefabs/PP_Rock_Pile_Forest_Moss_05.prefab
+  artifactKey: Guid(9a91bc2b0a89c4748a0c5b940bd461a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/에셋스토어/Pure Poly/Free Low Poly Nature Pack/Prefabs/PP_Rock_Pile_Forest_Moss_05.prefab using Guid(9a91bc2b0a89c4748a0c5b940bd461a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '449290d0afeb675986b10c30936acd05') in 0.028601 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/에셋스토어/Pure Poly/Free Low Poly Nature Pack/Prefabs/PP_Lake_Ground_04.prefab
+  artifactKey: Guid(66072c42e7f38924f90a2ea3e36cc606) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/에셋스토어/Pure Poly/Free Low Poly Nature Pack/Prefabs/PP_Lake_Ground_04.prefab using Guid(66072c42e7f38924f90a2ea3e36cc606) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd34eee96e0c1c5429d1c954a4869e273') in 0.032636 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/에셋스토어/Pure Poly/Free Low Poly Nature Pack/Prefabs/PP_Forest_Mountain_Moss_02.prefab
+  artifactKey: Guid(034023ff02a37fc47aab6bc6c49bf15b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/에셋스토어/Pure Poly/Free Low Poly Nature Pack/Prefabs/PP_Forest_Mountain_Moss_02.prefab using Guid(034023ff02a37fc47aab6bc6c49bf15b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fe2ef152fe1c8627d76eb6623f52fb19') in 0.029037 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/에셋스토어/Pure Poly/Free Low Poly Nature Pack/Prefabs/PP_Rock_Pile_Forest_Moss_10.prefab
+  artifactKey: Guid(c8134dd87be4906419f13922ddc5bf4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/에셋스토어/Pure Poly/Free Low Poly Nature Pack/Prefabs/PP_Rock_Pile_Forest_Moss_10.prefab using Guid(c8134dd87be4906419f13922ddc5bf4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7270f08538c18de2b25b454e7008db44') in 0.027261 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/에셋스토어/Pure Poly/Free Low Poly Nature Pack/Prefabs/PP_Tree_10.prefab
+  artifactKey: Guid(273b8f4150121d249ac7e2fd11da7005) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/에셋스토어/Pure Poly/Free Low Poly Nature Pack/Prefabs/PP_Tree_10.prefab using Guid(273b8f4150121d249ac7e2fd11da7005) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f6a6e680fb1e491857b643fc2a4715dd') in 0.028049 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/에셋스토어/Pure Poly/Free Low Poly Nature Pack/Prefabs/PP_Grass_11.prefab
+  artifactKey: Guid(ef62619642b0df743b22dd5120c6ac4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/에셋스토어/Pure Poly/Free Low Poly Nature Pack/Prefabs/PP_Grass_11.prefab using Guid(ef62619642b0df743b22dd5120c6ac4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b4a818d611d897d3c297275f72b2da08') in 0.030714 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 60.540161 seconds.
+  path: Assets/에셋스토어/Land_assets
+  artifactKey: Guid(f44630dbc8075224ca59b5f37a910710) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/에셋스토어/Land_assets using Guid(f44630dbc8075224ca59b5f37a910710) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fcc8303ca9235f71bd53d4c290ef6dae') in 0.009270 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.354962 seconds.
+  path: Assets/에셋스토어/Flashlight
+  artifactKey: Guid(da17a2dc6295c324183f85c99bbd23c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/에셋스토어/Flashlight using Guid(da17a2dc6295c324183f85c99bbd23c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3a46f50426a74d6c3b931686bb1ad25c') in 0.008470 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.253071 seconds.
+  path: Assets/에셋스토어/Flashlight/Materials
+  artifactKey: Guid(ecd30f8cd3979864680d1da82f00fac8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/에셋스토어/Flashlight/Materials using Guid(ecd30f8cd3979864680d1da82f00fac8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '381e5fdc87e9e92d316df7725a7ec003') in 0.002983 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.017626 seconds.
+  path: Assets/에셋스토어/Flashlight/Mesh
+  artifactKey: Guid(75677e771d5837c42b8cf24ab2ac4203) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/에셋스토어/Flashlight/Mesh using Guid(75677e771d5837c42b8cf24ab2ac4203) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '67fc8d858fa4662999b363f371bd8ef1') in 0.008374 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.715095 seconds.
+  path: Assets/에셋스토어/Flashlight/Prefab
+  artifactKey: Guid(c0584099ffc21b1408132035d3f1823e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/에셋스토어/Flashlight/Prefab using Guid(c0584099ffc21b1408132035d3f1823e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c8b78a340fe2aae690dc6bef0479a8ac') in 0.007760 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.040676 seconds.
+  path: Assets/에셋스토어/Flashlight/Prefab/Flashlight_GameObject.prefab
+  artifactKey: Guid(6241ef40758dd404b91e848e07dda193) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/에셋스토어/Flashlight/Prefab/Flashlight_GameObject.prefab using Guid(6241ef40758dd404b91e848e07dda193) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '89d88520b8f70790ee6ec44126e99733') in 0.539410 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.057407 seconds.
+  path: Assets/에셋스토어/Flashlight/Textures
+  artifactKey: Guid(a910bf1a72c07d543bfade25d4918f3c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/에셋스토어/Flashlight/Textures using Guid(a910bf1a72c07d543bfade25d4918f3c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9158e98075eb880b029e55f4e053b4ed') in 0.008680 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.017983 seconds.
+  path: Assets/에셋스토어/Flashlight/Textures/cookie1.png
+  artifactKey: Guid(b9e6bb9aff92ff9478ae4846c4623165) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/에셋스토어/Flashlight/Textures/cookie1.png using Guid(b9e6bb9aff92ff9478ae4846c4623165) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4cf6b12db9dcd555749625411788023a') in 0.021299 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/에셋스토어/Flashlight/Textures/Flashlight_normal.png
+  artifactKey: Guid(95c4876755c985547b10cea5720e15eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/에셋스토어/Flashlight/Textures/Flashlight_normal.png using Guid(95c4876755c985547b10cea5720e15eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'efa69dc97f4fc38b895f37730e53ad25') in 0.030108 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/에셋스토어/Flashlight/Textures/cookie3.png
+  artifactKey: Guid(05238b0c1b0c9954cb8f2c7a1d89afab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/에셋스토어/Flashlight/Textures/cookie3.png using Guid(05238b0c1b0c9954cb8f2c7a1d89afab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '87d2b6c2bd9ac3604326bc96db90a1f9') in 0.019473 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/에셋스토어/Flashlight/Textures/Flashlight_specGlossA.tga
+  artifactKey: Guid(6fb5f619c9dad6a4fb212ce710672cd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/에셋스토어/Flashlight/Textures/Flashlight_specGlossA.tga using Guid(6fb5f619c9dad6a4fb212ce710672cd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '825637f43c938f0b6d6dcd702ad0e16c') in 0.026605 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/에셋스토어/Flashlight/Textures/Flashlight_albedo.png
+  artifactKey: Guid(3042581489620fc45b0ca66a66f988ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/에셋스토어/Flashlight/Textures/Flashlight_albedo.png using Guid(3042581489620fc45b0ca66a66f988ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9e385470eeaed28bbf072f372ce2ca71') in 0.021617 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 32.152599 seconds.
+  path: Assets/에셋스토어/OccaSoftware/Enflame/Materials/Fire Material.mat
+  artifactKey: Guid(b2a904f3273627e488981118048edae8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/에셋스토어/OccaSoftware/Enflame/Materials/Fire Material.mat using Guid(b2a904f3273627e488981118048edae8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a3634679cf3db90c6bdf581be2b86e6a') in 0.071211 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/에셋스토어/OccaSoftware/Enflame/Materials/Sparks Material.mat
+  artifactKey: Guid(a12503bc547b15c45bcba8cb3b9ab873) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/에셋스토어/OccaSoftware/Enflame/Materials/Sparks Material.mat using Guid(a12503bc547b15c45bcba8cb3b9ab873) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ed6f2ab85f2516fda2efa6d6b1a77769') in 0.032446 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.394711 seconds.
+  path: Assets/에셋스토어/OccaSoftware/Enflame/Prefabs/Fire with Light, Sparks, Smoke, and Distortion.prefab
+  artifactKey: Guid(32e4090eebf4da94d80184fff513bad3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/에셋스토어/OccaSoftware/Enflame/Prefabs/Fire with Light, Sparks, Smoke, and Distortion.prefab using Guid(32e4090eebf4da94d80184fff513bad3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '28ff9d925754428b085ae7db2e5f9d53') in 0.050043 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000042 seconds.
+  path: Assets/에셋스토어/OccaSoftware/Enflame/Prefabs/Spot Light.prefab
+  artifactKey: Guid(0b3d2f18a2969eb488c89395d8d11565) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/에셋스토어/OccaSoftware/Enflame/Prefabs/Spot Light.prefab using Guid(0b3d2f18a2969eb488c89395d8d11565) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'abf56095f8f358e727ffaa33dc874a11') in 0.015883 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 17.054794 seconds.
+  path: Assets/에셋스토어/OccaSoftware/Enflame/Scenes/Fire Scene/ReflectionProbe-0.exr
+  artifactKey: Guid(5e730f0cb6ec41e4fa7097d6f984c5b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/에셋스토어/OccaSoftware/Enflame/Scenes/Fire Scene/ReflectionProbe-0.exr using Guid(5e730f0cb6ec41e4fa7097d6f984c5b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c4c27e7f2fedf26675fbbe5cde476a1f') in 0.046896 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.973672 seconds.
+  path: Assets/에셋스토어/OccaSoftware/Enflame/Textures/Fire.png
+  artifactKey: Guid(321385b93e6a79a429599db67dec28a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/에셋스토어/OccaSoftware/Enflame/Textures/Fire.png using Guid(321385b93e6a79a429599db67dec28a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd58da4774d3ea97091e69106c458d859') in 0.023605 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 24.421103 seconds.
+  path: Assets/에셋스토어/Land_assets/Free Low Poly Nature Pack/Meshes/PP_Birch_Tree_06.fbx
+  artifactKey: Guid(ddd36401006c8654eae1d9a6bcd6380d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/에셋스토어/Land_assets/Free Low Poly Nature Pack/Meshes/PP_Birch_Tree_06.fbx using Guid(ddd36401006c8654eae1d9a6bcd6380d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8203ebf8521ca39bab1dc556b70502ef') in 0.042591 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/에셋스토어/Land_assets/Free Low Poly Nature Pack/Meshes/PP_Hyacinth_04.fbx
+  artifactKey: Guid(46d171de72518e343891c4b4c03e5103) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/에셋스토어/Land_assets/Free Low Poly Nature Pack/Meshes/PP_Hyacinth_04.fbx using Guid(46d171de72518e343891c4b4c03e5103) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '769dab3de77b0ff55d315c0be1580270') in 0.027731 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/에셋스토어/Land_assets/Free Low Poly Nature Pack/Meshes/PP_Meadow_Path_05.fbx
+  artifactKey: Guid(324d33f3ad1481c4e8ba55d696fe64d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/에셋스토어/Land_assets/Free Low Poly Nature Pack/Meshes/PP_Meadow_Path_05.fbx using Guid(324d33f3ad1481c4e8ba55d696fe64d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4ded23b4041a2df48c4f73e76ec49069') in 0.030260 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/에셋스토어/Land_assets/Free Low Poly Nature Pack/Meshes/PP_Forest_Mountain_Moss_02.fbx
+  artifactKey: Guid(0a4e8c0b5a685eb4394da10424e65a7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/에셋스토어/Land_assets/Free Low Poly Nature Pack/Meshes/PP_Forest_Mountain_Moss_02.fbx using Guid(0a4e8c0b5a685eb4394da10424e65a7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2d47a69cb9580393aff9914518a242af') in 0.036253 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/에셋스토어/Land_assets/Free Low Poly Nature Pack/Meshes/PP_Lake_Ground_04.fbx
+  artifactKey: Guid(38b178f6a1ea19f4baf761918779b712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/에셋스토어/Land_assets/Free Low Poly Nature Pack/Meshes/PP_Lake_Ground_04.fbx using Guid(38b178f6a1ea19f4baf761918779b712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cfe5452c9a89d0b8ab0e2fb8ee1e14df') in 0.047053 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/에셋스토어/Land_assets/Free Low Poly Nature Pack/Meshes/PP_Grass_11.fbx
+  artifactKey: Guid(b50dd34feb8fa1b4fa5aa0a7d2271066) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/에셋스토어/Land_assets/Free Low Poly Nature Pack/Meshes/PP_Grass_11.fbx using Guid(b50dd34feb8fa1b4fa5aa0a7d2271066) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6391380a98c69e2726cde38c530b6b5f') in 0.029630 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/에셋스토어/Land_assets/Free Low Poly Nature Pack/Meshes/PP_Rock_Moss_Grown_11.fbx
+  artifactKey: Guid(7ed75b99c26237b4d844c1581c5da1b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/에셋스토어/Land_assets/Free Low Poly Nature Pack/Meshes/PP_Rock_Moss_Grown_11.fbx using Guid(7ed75b99c26237b4d844c1581c5da1b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1b43b37f59085eb925fd9996f6f6521c') in 0.027095 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/에셋스토어/Land_assets/Free Low Poly Nature Pack/Meshes/PP_Rock_Pile_Forest_Moss_10.fbx
+  artifactKey: Guid(7ea25f0f06a711d48a2bd754e29ecb0e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/에셋스토어/Land_assets/Free Low Poly Nature Pack/Meshes/PP_Rock_Pile_Forest_Moss_10.fbx using Guid(7ea25f0f06a711d48a2bd754e29ecb0e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7c852b43c4438f2ce9f7fc7d88a28f38') in 0.023363 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 370.309917 seconds.
+  path: Assets/에셋스토어/Polygon-Lite Survival Collection/Prefabs/Assembled_Tent_A.prefab
+  artifactKey: Guid(101ee0da20ef7b248ab197efd648e171) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/에셋스토어/Polygon-Lite Survival Collection/Prefabs/Assembled_Tent_A.prefab using Guid(101ee0da20ef7b248ab197efd648e171) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '96e12d4b06c184b29ecced9f5c79771e') in 0.027305 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/에셋스토어/Polygon-Lite Survival Collection/Prefabs/Meat_03.prefab
+  artifactKey: Guid(f3834b0b997a98f4abd2393ccf97366b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/에셋스토어/Polygon-Lite Survival Collection/Prefabs/Meat_03.prefab using Guid(f3834b0b997a98f4abd2393ccf97366b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5a1fa32a2c1a072acd028ab04e262f01') in 0.022506 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/에셋스토어/Polygon-Lite Survival Collection/Prefabs/SM_Chuck_Pistol_Box_9_EMPTY.prefab
+  artifactKey: Guid(f2faea41168d49f4b800fb973c865a33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/에셋스토어/Polygon-Lite Survival Collection/Prefabs/SM_Chuck_Pistol_Box_9_EMPTY.prefab using Guid(f2faea41168d49f4b800fb973c865a33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8abfaca37f52a32387d314e21c387d5a') in 0.021448 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/에셋스토어/Polygon-Lite Survival Collection/Prefabs/SM_Hammer.prefab
+  artifactKey: Guid(122489d113ea97d4bbf387d2dc2d5e86) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/에셋스토어/Polygon-Lite Survival Collection/Prefabs/SM_Hammer.prefab using Guid(122489d113ea97d4bbf387d2dc2d5e86) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9926ac5e5e075e8ce7ef5caa7256d6d4') in 0.023392 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000056 seconds.
+  path: Assets/에셋스토어/Polygon-Lite Survival Collection/Prefabs/SM_Cartridges_9_ONE.prefab
+  artifactKey: Guid(cd709f568ba51c148856dc379eadb03e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/에셋스토어/Polygon-Lite Survival Collection/Prefabs/SM_Cartridges_9_ONE.prefab using Guid(cd709f568ba51c148856dc379eadb03e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '35ee480ec1d1c8b437576e5dd907837d') in 0.021880 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/에셋스토어/Polygon-Lite Survival Collection/Prefabs/Homemade_Medical_Splint.prefab
+  artifactKey: Guid(37476453262801641b9ba6c5a30a8098) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/에셋스토어/Polygon-Lite Survival Collection/Prefabs/Homemade_Medical_Splint.prefab using Guid(37476453262801641b9ba6c5a30a8098) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f07b36781f52cb7c040e734a44cf3841') in 0.021542 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/에셋스토어/Polygon-Lite Survival Collection/Prefabs/SM_Magazine_For_Army_Pistol_Empty.prefab
+  artifactKey: Guid(75684f6054a9a8143b92a740cc80a631) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/에셋스토어/Polygon-Lite Survival Collection/Prefabs/SM_Magazine_For_Army_Pistol_Empty.prefab using Guid(75684f6054a9a8143b92a740cc80a631) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '40f631b23d1996cb3abf00c648eff471') in 0.020368 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/에셋스토어/Polygon-Lite Survival Collection/Prefabs/Bandage.prefab
+  artifactKey: Guid(cc727501756aee741997efa9a175c317) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/에셋스토어/Polygon-Lite Survival Collection/Prefabs/Bandage.prefab using Guid(cc727501756aee741997efa9a175c317) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '35b0a4ccad45be69be06c9512ffc1712') in 0.020240 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/에셋스토어/Polygon-Lite Survival Collection/Prefabs/Medical_Kit.prefab
+  artifactKey: Guid(c6776ea35b3d59b46907ebd401b343ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/에셋스토어/Polygon-Lite Survival Collection/Prefabs/Medical_Kit.prefab using Guid(c6776ea35b3d59b46907ebd401b343ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a9ee6de936749eb01733a93946d1c39a') in 0.022471 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/에셋스토어/Polygon-Lite Survival Collection/Prefabs/SM_Collimator_Sight_A_01.prefab
+  artifactKey: Guid(129eda89f2b005c45a74bd52224c6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/에셋스토어/Polygon-Lite Survival Collection/Prefabs/SM_Collimator_Sight_A_01.prefab using Guid(129eda89f2b005c45a74bd52224c6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b6776c87165984b2f2f456704c1135d3') in 0.021169 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/에셋스토어/Polygon-Lite Survival Collection/Prefabs/SM_Magazine_For_Army_Pistol.prefab
+  artifactKey: Guid(5d6c8044d7125364a83e2ab1c71c4ed5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/에셋스토어/Polygon-Lite Survival Collection/Prefabs/SM_Magazine_For_Army_Pistol.prefab using Guid(5d6c8044d7125364a83e2ab1c71c4ed5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7bf6f8a5a1a749c4d35e88595879443d') in 0.019951 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/에셋스토어/Polygon-Lite Survival Collection/Prefabs/SM_Magazine_For_Special_Submachine_Gun.prefab
+  artifactKey: Guid(eebf9633a5556074fa8426026d1c460f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/에셋스토어/Polygon-Lite Survival Collection/Prefabs/SM_Magazine_For_Special_Submachine_Gun.prefab using Guid(eebf9633a5556074fa8426026d1c460f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'edd4d48f84f2f08a33f83bb96b829a8a') in 0.021192 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/에셋스토어/Polygon-Lite Survival Collection/Prefabs/Bonfire_01.prefab
+  artifactKey: Guid(6046a64e832cdad44ac9e18fe66d19f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/에셋스토어/Polygon-Lite Survival Collection/Prefabs/Bonfire_01.prefab using Guid(6046a64e832cdad44ac9e18fe66d19f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '33026d31b6d2812051d1b6d9ae39659f') in 0.019531 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/에셋스토어/Polygon-Lite Survival Collection/Prefabs/SM_Log.prefab
+  artifactKey: Guid(1e63d2a1731e95a4bbee54952e67f2b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/에셋스토어/Polygon-Lite Survival Collection/Prefabs/SM_Log.prefab using Guid(1e63d2a1731e95a4bbee54952e67f2b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9ada982784a2524866f60a02f025a3a8') in 0.019105 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000052 seconds.
+  path: Assets/에셋스토어/Polygon-Lite Survival Collection/Prefabs/SM_Army_Pistol.prefab
+  artifactKey: Guid(b52a2a857d903434facf521b55ad8bfd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/에셋스토어/Polygon-Lite Survival Collection/Prefabs/SM_Army_Pistol.prefab using Guid(b52a2a857d903434facf521b55ad8bfd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '741d441b4f36fab45845cd926bcdc1c5') in 0.020210 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/에셋스토어/Polygon-Lite Survival Collection/Prefabs/Canned_food_A_01.prefab
+  artifactKey: Guid(036c576504fa16147906e501b1a57384) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/에셋스토어/Polygon-Lite Survival Collection/Prefabs/Canned_food_A_01.prefab using Guid(036c576504fa16147906e501b1a57384) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '217b85f5e2d090d88efc3b6ca27d4584') in 0.021757 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/에셋스토어/Polygon-Lite Survival Collection/Prefabs/Canned_food_B_01.prefab
+  artifactKey: Guid(4c22dade7f9c21b44b6cea88848f5e8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/에셋스토어/Polygon-Lite Survival Collection/Prefabs/Canned_food_B_01.prefab using Guid(4c22dade7f9c21b44b6cea88848f5e8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a264ccd5ce5cbb886f796a474d104e07') in 0.021096 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/에셋스토어/Polygon-Lite Survival Collection/Prefabs/SM_Log_laying.prefab
+  artifactKey: Guid(63a58d29feb4cf64081e1f4a8e1b6844) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/에셋스토어/Polygon-Lite Survival Collection/Prefabs/SM_Log_laying.prefab using Guid(63a58d29feb4cf64081e1f4a8e1b6844) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bc9e941d15c62bb97622db979b1d0018') in 0.022180 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/에셋스토어/Polygon-Lite Survival Collection/Prefabs/SM_ARAMID_FABRIC.prefab
+  artifactKey: Guid(0bc308d5d4320ef4384e58e1eb73428a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/에셋스토어/Polygon-Lite Survival Collection/Prefabs/SM_ARAMID_FABRIC.prefab using Guid(0bc308d5d4320ef4384e58e1eb73428a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f78a377e1cb455dbad2ef2fce29c76be') in 0.020682 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/에셋스토어/Polygon-Lite Survival Collection/Prefabs/SM_Camping_Knife.prefab
+  artifactKey: Guid(ce2204ad7743b3445befdd8da95cda27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/에셋스토어/Polygon-Lite Survival Collection/Prefabs/SM_Camping_Knife.prefab using Guid(ce2204ad7743b3445befdd8da95cda27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6cd3c6df4b6fa7e72c9b9605435b80fb') in 0.023150 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/에셋스토어/Polygon-Lite Survival Collection/Prefabs/SM_Magazine_For_Special_Submachine_Gun_Empty.prefab
+  artifactKey: Guid(6cc25e1b147c93248987a6b4e5deee90) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/에셋스토어/Polygon-Lite Survival Collection/Prefabs/SM_Magazine_For_Special_Submachine_Gun_Empty.prefab using Guid(6cc25e1b147c93248987a6b4e5deee90) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dfc8c5d903ea76033553c9f6f55fa6f3') in 0.020260 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/에셋스토어/Polygon-Lite Survival Collection/Prefabs/SM_Handguard_For_Submachine_Gun_01.prefab
+  artifactKey: Guid(26b8206028c8ad242bf7bcfe0703439b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/에셋스토어/Polygon-Lite Survival Collection/Prefabs/SM_Handguard_For_Submachine_Gun_01.prefab using Guid(26b8206028c8ad242bf7bcfe0703439b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0a60a84c5bc92a3757cb051259b1def5') in 0.020494 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/에셋스토어/Polygon-Lite Survival Collection/Prefabs/SM_Large_Magazine_For_Army_Pistol_Empty.prefab
+  artifactKey: Guid(3ae47a629d31e6545976a65007848e7c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/에셋스토어/Polygon-Lite Survival Collection/Prefabs/SM_Large_Magazine_For_Army_Pistol_Empty.prefab using Guid(3ae47a629d31e6545976a65007848e7c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dca7f849ba0115770766a42242df5fcc') in 0.028585 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/에셋스토어/Polygon-Lite Survival Collection/Prefabs/SM_GAS_CYLINDER_02.prefab
+  artifactKey: Guid(ab3787f757082314fb65fb7ca4552c31) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/에셋스토어/Polygon-Lite Survival Collection/Prefabs/SM_GAS_CYLINDER_02.prefab using Guid(ab3787f757082314fb65fb7ca4552c31) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b57ac7c6b09750e7d5ae64a616dcbeb5') in 0.024112 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000047 seconds.
+  path: Assets/에셋스토어/Polygon-Lite Survival Collection/Prefabs/SM_Collimator_Sight_B_01.prefab
+  artifactKey: Guid(59325158d2140a4428c7bc6d792cb605) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/에셋스토어/Polygon-Lite Survival Collection/Prefabs/SM_Collimator_Sight_B_01.prefab using Guid(59325158d2140a4428c7bc6d792cb605) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '441d271f47d858b7efe4286282254f27') in 0.022090 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.994686 seconds.
+  path: Assets/에셋스토어/Polygon-Lite Survival Collection/Prefabs/SM_Muzzle_Brake_Compensator_01.prefab
+  artifactKey: Guid(be7edd9c916f8a048a7e416e583f354a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/에셋스토어/Polygon-Lite Survival Collection/Prefabs/SM_Muzzle_Brake_Compensator_01.prefab using Guid(be7edd9c916f8a048a7e416e583f354a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '46b97eb9a9f932f5df1934467ff3311c') in 0.019352 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/에셋스토어/Polygon-Lite Survival Collection/Prefabs/SM_Tactical_Block.prefab
+  artifactKey: Guid(c90d4b87a9347fd43ad0fb549ee1f938) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/에셋스토어/Polygon-Lite Survival Collection/Prefabs/SM_Tactical_Block.prefab using Guid(c90d4b87a9347fd43ad0fb549ee1f938) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '98beadb9010195fee6eee050a1432498') in 0.021016 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/에셋스토어/Polygon-Lite Survival Collection/Prefabs/SM_Pallet_03.prefab
+  artifactKey: Guid(29abf24f5c3a0c346920490127e9b6d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/에셋스토어/Polygon-Lite Survival Collection/Prefabs/SM_Pallet_03.prefab using Guid(29abf24f5c3a0c346920490127e9b6d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b1a90a8136b5f2f47dc509e0e8ec333e') in 0.021465 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/에셋스토어/Polygon-Lite Survival Collection/Prefabs/SM_Scrap_Metal_02.prefab
+  artifactKey: Guid(498ab23c9cbee7845b2c689473697044) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/에셋스토어/Polygon-Lite Survival Collection/Prefabs/SM_Scrap_Metal_02.prefab using Guid(498ab23c9cbee7845b2c689473697044) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cdd2a9eb91105887ed949c03f2c22bc3') in 0.020377 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/에셋스토어/Polygon-Lite Survival Collection/Prefabs/SM_THE_CLOTH.prefab
+  artifactKey: Guid(9ce2ab4fcb9070246bb9ed4506a37518) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/에셋스토어/Polygon-Lite Survival Collection/Prefabs/SM_THE_CLOTH.prefab using Guid(9ce2ab4fcb9070246bb9ed4506a37518) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '29feb8551ee6b49d5afc88c73d6c8c33') in 0.022654 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/에셋스토어/Polygon-Lite Survival Collection/Prefabs/SM_SKIN_FLATCHES.prefab
+  artifactKey: Guid(e2cbe343c87fdb7468a2b5176c7c4cb0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/에셋스토어/Polygon-Lite Survival Collection/Prefabs/SM_SKIN_FLATCHES.prefab using Guid(e2cbe343c87fdb7468a2b5176c7c4cb0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cbb80106ec06fc60cd30e2333c4c8b2a') in 0.021751 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.205305 seconds.
+  path: Assets/에셋스토어/Polygon-Lite Survival Collection/Prefabs/SM_Vertical_Handle_01.prefab
+  artifactKey: Guid(580b4dae3deb3ea4e975a4bf33fa4387) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/에셋스토어/Polygon-Lite Survival Collection/Prefabs/SM_Vertical_Handle_01.prefab using Guid(580b4dae3deb3ea4e975a4bf33fa4387) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '82ba7ec57068083b4321484dc4329a5d') in 0.020122 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/에셋스토어/Polygon-Lite Survival Collection/Prefabs/SM_Woods_03.prefab
+  artifactKey: Guid(386272c2cd2daf040ade792158663725) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/에셋스토어/Polygon-Lite Survival Collection/Prefabs/SM_Woods_03.prefab using Guid(386272c2cd2daf040ade792158663725) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4e392eee3f14508c3b66cd74c7f32299') in 0.025915 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/에셋스토어/Polygon-Lite Survival Collection/Prefabs/Small_Canned_Food_C_03.prefab
+  artifactKey: Guid(9406672675d366049a5cf427d4fe7332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/에셋스토어/Polygon-Lite Survival Collection/Prefabs/Small_Canned_Food_C_03.prefab using Guid(9406672675d366049a5cf427d4fe7332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b5a4da08e0e3a22a726a0a07a0ffdecb') in 0.023454 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/에셋스토어/Polygon-Lite Survival Collection/Prefabs/Small_Canned_Food_D_03.prefab
+  artifactKey: Guid(a0be92f82bc08274b8f14f7998fe6eea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/에셋스토어/Polygon-Lite Survival Collection/Prefabs/Small_Canned_Food_D_03.prefab using Guid(a0be92f82bc08274b8f14f7998fe6eea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dfe7f9954334e0b2e73ff12d46511a4a') in 0.023820 seconds 
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0
