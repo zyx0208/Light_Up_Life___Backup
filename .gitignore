@@ -5,13 +5,13 @@
 # This .gitignore file should be placed at the root of your Unity project directory
 #
 # Get latest from https://github.com/github/gitignore/blob/main/Unity.gitignore
-unityMF/[Ll]ibrary/
-unityMF/[Tt]emp/
-unityMF/[Oo]bj/
-unityMF/[Bb]uild/
-unityMF/[Bb]uilds/
-unityMF/[Ll]ogs/
-unityMF/[Uu]ser[Ss]ettings/
+/unityMF/[Ll]ibrary/
+/unityMF/[Tt]emp/
+/unityMF/[Oo]bj/
+/unityMF/[Bb]uild/
+/unityMF/[Bb]uilds/
+/unityMF/[Ll]ogs/
+/unityMF/[Uu]ser[Ss]ettings/
 
 # MemoryCaptures can get excessive in size.
 # They also could contain extremely sensitive data
