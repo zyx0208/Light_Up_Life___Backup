@@ -7,11 +7,13 @@ public class MainUI_Player_Script : MonoBehaviour
     public float speed = 5f; //플레이어블 캐릭터의 이동속도
     Animator animator;
     public GameObject Front_Block;
+    Rigidbody rigidPlayer;
     // Start is called before the first frame update
     void Start()
     {
-        this.GetComponent<Transform>();
+        //this.GetComponent<Transform>();
         animator = this.GetComponent<Animator>();
+        rigidPlayer = this.GetComponent<Rigidbody>();
         Front_Block.transform.position = new Vector3(this.transform.position.x, this.transform.position.y, this.transform.position.z + 1);
     }
 
@@ -21,7 +23,8 @@ public class MainUI_Player_Script : MonoBehaviour
         //이동관련
         if (Input.GetKey(KeyCode.A)) //왼쪽 이동
         {
-            transform.Translate(-speed * Time.deltaTime, 0, 0, Space.World); //cpu마다의 성능 격차를 해소하기 위해 Time.deltaTime를 곱해서 사용 // Space.World : 절대좌표
+            rigidPlayer.AddForce(Vector3.left * speed);
+            //transform.Translate(-speed * Time.deltaTime, 0, 0, Space.World); //cpu마다의 성능 격차를 해소하기 위해 Time.deltaTime를 곱해서 사용 // Space.World : 절대좌표
             animator.SetFloat("IsMoving", 1f);
             if (Input.GetKey(KeyCode.W))
             {

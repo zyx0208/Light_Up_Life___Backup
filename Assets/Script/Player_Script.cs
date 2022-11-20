@@ -11,7 +11,7 @@ public class Player_Script : MonoBehaviour
     public float speed = 5f; //플레이어블 캐릭터의 이동속도
 
     public double AttackCooldown = 0.5; //총알 발사 딜레이
-    public Rigidbody rigidbody_; //"rigidbody"라는 이름이 시스템에서 다른 용도로 사용 중이라서 언더바 추가
+    Rigidbody rigidbody_; //"rigidbody"라는 이름이 시스템에서 다른 용도로 사용 중이라서 언더바 추가
     private double timer = 0.0;
 
     void Awake() //총알발사 사운드 
@@ -24,6 +24,7 @@ public class Player_Script : MonoBehaviour
         this.transform.position = new Vector3(0, 1, 0); //시작점 설정
         this.transform.rotation = Quaternion.Euler(0, 0, 0); //시작 각도 설정(웬만하면 0, 0, 0으로)
         this.GetComponent<Transform>();
+        rigidbody_ = GetComponent<Rigidbody>();
         animator = this.GetComponent<Animator>();
     }
 
