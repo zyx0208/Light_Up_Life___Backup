@@ -7,6 +7,7 @@ public class Bullet_Script : MonoBehaviour
     public float disappear_time = 2; //총알이 발사된 후 최대 존재 시간
     public float speed = 30f; //총알의 속도
     private double timer = 0.0;
+    Material mat;
 
     void Start()
     {
@@ -33,10 +34,10 @@ public class Bullet_Script : MonoBehaviour
        
         if (other.tag == "Enemy")
         {
-
+            Debug.Log("맞았당!!");
             other.gameObject.SetActive(false);
             Destroy(this.gameObject);
-
+           
         }
 
         if (other.tag == "Walls")
@@ -44,4 +45,7 @@ public class Bullet_Script : MonoBehaviour
             Destroy(this.gameObject);
         }
     }
+
+
+
 }

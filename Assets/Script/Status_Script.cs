@@ -26,5 +26,5 @@ public class Status_Script : MonoBehaviour
         }
     }
 
-
+    // 노란박스 좌우로 이동
 }

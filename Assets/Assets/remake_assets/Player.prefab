@@ -915,7 +915,7 @@ GameObject:
   - component: {fileID: 6988684598505797018}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Player
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1103,6 +1103,7 @@ MonoBehaviour:
   bullet: {fileID: 748094300832330716, guid: 831c0af8e517b794baddc845180a8b97, type: 3}
   speed: 5
   AttackCooldown: 0.5
+  rigidbody_: {fileID: 0}
 --- !u!1 &3097415495571301943
 GameObject:
   m_ObjectHideFlags: 0
