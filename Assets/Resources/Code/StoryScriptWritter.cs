@@ -46,7 +46,7 @@ public class StoryScriptWritter : MonoBehaviour
         }
         else
         {
-            SceneManager.LoadScene("Stage1_00_Scene");
+            SceneManager.LoadScene("3_Chapter0");
         }
     }
 

@@ -4,96 +4,43 @@ using UnityEngine;
 
 public class MainUI_Player_Script : MonoBehaviour
 {
-    public float speed = 5f; //플레이어블 캐릭터의 이동속도
+    private CharacterController controller;
+    private Vector3 playerVelocity;
+    private bool groundedPlayer;
+    public float playerSpeed = .0f;
+    private float gravityValue = -9.81f;
+    private Animator anim;
     Animator animator;
-    public GameObject Front_Block;
+
     // Start is called before the first frame update
     void Start()
     {
-        this.GetComponent<Transform>();
-        animator = this.GetComponent<Animator>();
-        Front_Block.transform.position = new Vector3(this.transform.position.x, this.transform.position.y, this.transform.position.z + 1);
+        controller = GetComponent<CharacterController>();
+        anim = GetComponent<Animator>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        //이동관련
-        if (Input.GetKey(KeyCode.A)) //왼쪽 이동
+        groundedPlayer = controller.isGrounded;
+        if (groundedPlayer && playerVelocity.y < 0)
         {
-            transform.Translate(-speed * Time.deltaTime, 0, 0, Space.World); //cpu마다의 성능 격차를 해소하기 위해 Time.deltaTime를 곱해서 사용 // Space.World : 절대좌표
-            animator.SetFloat("IsMoving", 1f);
-            if (Input.GetKey(KeyCode.W))
-            {
-                Front_Block.transform.position = new Vector3(this.transform.position.x - 1, this.transform.position.y, this.transform.position.z + 1);
-            }
-            else if (Input.GetKey(KeyCode.S))
-            {
-                Front_Block.transform.position = new Vector3(this.transform.position.x - 1, this.transform.position.y, this.transform.position.z - 1);
-            }
-            else
-            {
-                Front_Block.transform.position = new Vector3(this.transform.position.x - 1, this.transform.position.y, this.transform.position.z);
-            }
-        }
-        if (Input.GetKey(KeyCode.D)) //오른쪽 이동
-        {
-            transform.Translate(speed * Time.deltaTime, 0, 0, Space.World);
-            animator.SetFloat("IsMoving", 1f);
-            if (Input.GetKey(KeyCode.W))
-            {
-                Front_Block.transform.position = new Vector3(this.transform.position.x + 1, this.transform.position.y, this.transform.position.z + 1);
-            }
-            else if (Input.GetKey(KeyCode.S))
-            {
-                Front_Block.transform.position = new Vector3(this.transform.position.x + 1, this.transform.position.y, this.transform.position.z - 1);
-            }
-            else
-            {
-                Front_Block.transform.position = new Vector3(this.transform.position.x + 1, this.transform.position.y, this.transform.position.z);
-            }
-        }
-        if (Input.GetKey(KeyCode.W)) //위쪽 이동
-        {
-            transform.Translate(0, 0, speed * Time.deltaTime, Space.World);
-            animator.SetFloat("IsMoving", 1f);
-            if (Input.GetKey(KeyCode.A))
-            {
-                Front_Block.transform.position = new Vector3(this.transform.position.x - 1, this.transform.position.y, this.transform.position.z + 1);
-            }
-            else if (Input.GetKey(KeyCode.D))
-            {
-                Front_Block.transform.position = new Vector3(this.transform.position.x + 1, this.transform.position.y, this.transform.position.z + 1);
-            }
-            else
-            {
-                Front_Block.transform.position = new Vector3(this.transform.position.x, this.transform.position.y, this.transform.position.z + 1);
-            }
-        }
-        if (Input.GetKey(KeyCode.S)) //아래쪽 이동
-        {
-            transform.Translate(0, 0, -speed * Time.deltaTime, Space.World);
-            animator.SetFloat("IsMoving", 1f);
-            if (Input.GetKey(KeyCode.A))
-            {
-                Front_Block.transform.position = new Vector3(this.transform.position.x - 1, this.transform.position.y, this.transform.position.z - 1);
-            }
-            else if (Input.GetKey(KeyCode.D))
-            {
-                Front_Block.transform.position = new Vector3(this.transform.position.x + 1, this.transform.position.y, this.transform.position.z - 1);
-            }
-            else
-            {
-                Front_Block.transform.position = new Vector3(this.transform.position.x, this.transform.position.y, this.transform.position.z - 1);
-            }
-        }
-        if ((!Input.GetKey(KeyCode.A)) && (!Input.GetKey(KeyCode.D)) && (!Input.GetKey(KeyCode.W)) && (!Input.GetKey(KeyCode.S))) //움직이지 않을 때
-        {
-            animator.SetFloat("IsMoving", 0f);
+            playerVelocity.y = 0f;
         }
 
-        //시점관련
-        this.transform.LookAt(Front_Block.transform);
+        Vector3 move = new Vector3(Input.GetAxisRaw("Horizontal"), 0, Input.GetAxisRaw("Vertical"));
+        controller.Move(move * Time.deltaTime * playerSpeed);
 
+        if (move != Vector3.zero) anim.SetBool("isWalk", true);
+        else anim.SetBool("isWalk", false);
+
+        if (move != Vector3.zero)
+        {
+            gameObject.transform.forward = move;
+        }
+
+        playerVelocity.y += gravityValue * Time.deltaTime;
+        controller.Move(playerVelocity * Time.deltaTime);
     }
+
 }

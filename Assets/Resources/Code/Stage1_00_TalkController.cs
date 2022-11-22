@@ -80,6 +80,7 @@ public class Stage1_00_TalkController : MonoBehaviour
             nameObj.gameObject.SetActive(false);
             scriptObj.gameObject.SetActive(false);
             nextStoryBtn.SetActive(false);
+            PlayerController.is_script_time = false;
         }
     }
 

@@ -8,7 +8,7 @@ public class ButtonScript : MonoBehaviour
 {
     public void OnClickStart()
     {
-        //SceneManager.LoadScene("SampleScene");
+        SceneManager.LoadScene("2_Prologue");
     }
 
     public void OnClickExit()
