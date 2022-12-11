@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Bullet_Script : MonoBehaviour
 {
-    public float disappear_time = 2; //총알이 발사된 후 최대 존재 시간
+    public float disappear_time = 10f; //총알이 발사된 후 최대 존재 시간
     public float speed = 30f; //총알의 속도
     private double timer = 0.0;
     Material mat;
@@ -35,7 +35,7 @@ public class Bullet_Script : MonoBehaviour
         if (other.tag == "Enemy")
         {
             Debug.Log("맞았당!!");
-            other.gameObject.SetActive(false);
+            //other.gameObject.SetActive(false);
             Destroy(this.gameObject);
            
         }
