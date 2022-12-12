@@ -20,7 +20,8 @@ public class PlayerController : MonoBehaviour
     {
         controller = GetComponent<CharacterController>();
         anim = GetComponent<Animator>();
-        is_script_time = true;
+        ///////////////¹Ù²ã¶û
+        is_script_time = false;
     }
 
 
