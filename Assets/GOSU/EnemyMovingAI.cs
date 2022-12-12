@@ -11,7 +11,6 @@ public class EnemyMovingAI : MonoBehaviour
     public Transform target;
     public float Damage;
     NavMeshAgent nav;
-
     void Awake()
     {
         nav = GetComponent<NavMeshAgent>();

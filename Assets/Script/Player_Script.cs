@@ -1,9 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class Player_Script : MonoBehaviour
 {
+    int MaxHP;
+    int CurHP;
+
     AudioSource bulletSound;
     Animator animator;
 
@@ -11,10 +16,13 @@ public class Player_Script : MonoBehaviour
     public float speed = 5f; //플레이어블 캐릭터의 이동속도
 
     public double AttackCooldown = 0.5; //총알 발사 딜레이
+    private readonly double DamagedCooltime = 0.5; //피격 무적시간
     public Rigidbody rigidbody_; //"rigidbody"라는 이름이 시스템에서 다른 용도로 사용 중이라서 언더바 추가
     private double timer = 0.0;
 
-    bool isDamage; //무적타임을 위한
+    public Slider PlayerHpSlider;
+
+    private double damage_timer; //무적타임을 위한
 
     void Awake() //총알발사 사운드 
     {
@@ -23,7 +31,9 @@ public class Player_Script : MonoBehaviour
 
     void Start()
     {
-        //
+        MaxHP = 10;
+        CurHP = MaxHP;
+        
         // this.transform.position = new Vector3(0, 1, 0); //시작점 설정
         this.transform.rotation = Quaternion.Euler(0, 0, 0); //시작 각도 설정(웬만하면 0, 0, 0으로)
         this.GetComponent<Transform>();
@@ -75,6 +85,45 @@ public class Player_Script : MonoBehaviour
                 timer = AttackCooldown;
             }
         }
+
+        if (damage_timer > 0) //타이머가 0초보다 크면 매 프레임마다 타이머가 줄어듦
+        {
+            damage_timer -= Time.deltaTime;
+        }
+        else if (damage_timer < 0)
+        {
+            damage_timer = 0;
+        }
+
+        if(CurHP < 0)
+        {
+            Die();
+        }
     }
 
+    public void Damage(int damage)
+    {
+        CurHP -= damage;
+        PlayerHpSlider.value = (float)CurHP / (float)MaxHP * 10;
+    }
+
+    public void Die()
+    {
+        SceneManager.LoadScene("EnemyScene");
+    }
+
+    void OnCollisionStay(Collision other)
+    {
+        
+        if (other.collider.tag == "Enemy")
+        {
+            if (damage_timer == 0)
+            {
+                Damage(1);
+                Debug.Log("HP " + CurHP);
+                damage_timer = DamagedCooltime;
+            }
+            
+        }
+    }
 }
