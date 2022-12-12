@@ -102,10 +102,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 2
-  MonsterHpSlider: {fileID: 0}
-  monster: {fileID: 4885079432260988}
   target: {fileID: 0}
-  hpBarPrefab: {fileID: 9159997090729971326, guid: 6b8bb935bf922514ebbbe5d292b2d183, type: 3}
 --- !u!195 &959943620
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -144,7 +141,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &4835855552950442
 Transform:
   m_ObjectHideFlags: 0

@@ -4,7 +4,8 @@ using UnityEngine;
 using UnityEngine.AI;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
-public class EnemyMovingAI : MonoBehaviour
+
+public class Enemy_LV2 : MonoBehaviour
 {
     // 몬스터가 플레이어 자동추적하는 코드 + LV2몬스터 근접공격시 슬라이더 조절
     public Slider PlayerHpSlider;
@@ -20,7 +21,7 @@ public class EnemyMovingAI : MonoBehaviour
 
     void Update()
     {
-            nav.SetDestination(target.position);
+        nav.SetDestination(target.position);
     }
 
     void Start()
