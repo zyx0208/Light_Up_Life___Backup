@@ -11,8 +11,6 @@ public class Enemy : MonoBehaviour
     int MaxHP;
     int CurHP;
     public float damage;
-    public Transform monster;
-    public Player_Script player;
     public Transform target; //따라갈 대상
 
     NavMeshAgent nav;
@@ -21,7 +19,7 @@ public class Enemy : MonoBehaviour
     void Update()
     {
         nav.SetDestination(target.position);
-        if(CurHP < 0)
+        if(CurHP <= 0)
         {
             Die();
         }
@@ -29,6 +27,7 @@ public class Enemy : MonoBehaviour
 
     void Start()
     {
+        target = GameObject.Find("Player").transform;
         MaxHP = 3;
         CurHP = MaxHP;
         nav = GetComponent<NavMeshAgent>();
