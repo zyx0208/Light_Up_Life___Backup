@@ -25,7 +25,7 @@ public class Enemy_LV2 : MonoBehaviour
         nav.SetDestination(target.position);
         if (PlayerHpSlider.value <= 0)
         {
-            SceneManager.LoadScene("Scene1_" + stage);
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
     }
 

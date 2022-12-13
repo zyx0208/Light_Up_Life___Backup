@@ -770,6 +770,7 @@ MonoBehaviour:
   PlayerHpSlider: {fileID: 287867638}
   target: {fileID: 1634608125}
   Damage: 1
+  stage: 0
 --- !u!195 &421417216
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -828,6 +829,7 @@ MonoBehaviour:
   PlayerHpSlider: {fileID: 287867638}
   target: {fileID: 1634608125}
   Damage: 1
+  stage: 0
 --- !u!65 &451641211
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1250,6 +1252,7 @@ MonoBehaviour:
   PlayerHpSlider: {fileID: 287867638}
   target: {fileID: 1634608125}
   Damage: 0
+  stage: 0
 --- !u!195 &764816106
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -1352,6 +1355,8 @@ MonoBehaviour:
   E_AttackCooldown: 2
   PlayerHpSlider: {fileID: 287867638}
   isCollider: 0
+  stage: 0
+  Damage: 0
   target: {fileID: 1634608125}
 --- !u!1001 &784891228
 PrefabInstance:
@@ -1366,7 +1371,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1837317425425208, guid: 3aec22b5d3f3c2947bb81040b56e5f96, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1837317425425208, guid: 3aec22b5d3f3c2947bb81040b56e5f96, type: 3}
       propertyPath: m_TagString
@@ -1982,6 +1987,8 @@ MonoBehaviour:
   E_AttackCooldown: 2
   PlayerHpSlider: {fileID: 287867638}
   isCollider: 0
+  stage: 0
+  Damage: 0
   target: {fileID: 1634608125}
 --- !u!54 &1019926501
 Rigidbody:
@@ -2707,7 +2714,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2948467272945731740, guid: 417b4fba20c30914baa231e4c940f782, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2952542921040389808, guid: 417b4fba20c30914baa231e4c940f782, type: 3}
       propertyPath: m_RootOrder

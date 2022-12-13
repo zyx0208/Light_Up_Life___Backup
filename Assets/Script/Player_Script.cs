@@ -110,7 +110,7 @@ public class Player_Script : MonoBehaviour
 
     public void Die()
     {
-        SceneManager.LoadScene("Scene1_" + stage);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
     void OnCollisionStay(Collision other)

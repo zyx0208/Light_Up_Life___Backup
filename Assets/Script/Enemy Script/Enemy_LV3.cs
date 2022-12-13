@@ -59,7 +59,7 @@ public class Enemy_LV3: MonoBehaviour
             if (PlayerHpSlider.value <= 0)
             {
                 // 이거 리로드씬으로 바꾸기
-                SceneManager.LoadScene("Scene1_" + stage);
+                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
             }
 
         }
