@@ -42,7 +42,7 @@ public class TracingBullet : MonoBehaviour
         {
             GetComponent<ParticleSystem>().Play();
             target.GetComponent<Player_Script>().Damage(3);
-            Die();
+            this.Die();
         }
     }
 

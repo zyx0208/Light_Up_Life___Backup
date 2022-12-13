@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class Player_Script : MonoBehaviour
 {
-    void Damage(int damage)
+    public void Damage(int damage)
     {
         CurHP -= damage;
         PlayerHpSlider.value = (float)CurHP / (float)MaxHP * 10;
