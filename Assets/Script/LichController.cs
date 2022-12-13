@@ -1,10 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Rendering;
 
 public class LichController : MonoBehaviour
 {
     public int HP = 100;
+    public GameObject tracingBullet;
+    public GameObject Monster;
     int MaxHP = 100;
     int pattern;
     bool isRaged = false;
@@ -28,7 +31,6 @@ public class LichController : MonoBehaviour
         else if (HP < MaxHP / 2) //체력이 절반보다 낮을 때
         {
             isRaged = true;
-            anim.SetBool("isRaged", true);
         }
         
     }
@@ -40,12 +42,15 @@ public class LichController : MonoBehaviour
 
     public void Attack1()
     {
-        anim.SetTrigger("isAttacking");    
+        anim.SetTrigger("isAttacking");
+        Invoke("SummonTracingBullet", 0.6f);
     }
+
 
     void SpacialAttack()
     {
-        anim.SetTrigger("isAttacking");
+        anim.SetTrigger("isBttacking");
+        Invoke("SummonMonster", 1.4f);
         HP -= 1;
     }
 
@@ -63,17 +68,28 @@ public class LichController : MonoBehaviour
         while(HP>0)
         {
             pattern = Random.Range(1, 3);
-            if (isRaged) pattern = 4;
+            
             Debug.Log("pattern = " + pattern);
 
-            if (pattern == 1)
-                Attack1();
-            else if (pattern == 2)
-                Hit(3);
-            else if (pattern == 3)
-                Die();
-            else if (pattern == 4)
+            if (isRaged)
+            {
+                if (pattern == 1)
+                {
+                    SpacialAttack();
+                    Debug.Log("SpacialAttack");
+                }
+                else if (pattern == 2)
+                {
+                    Attack1();
+                    Debug.Log("Attack");
+                }  
+            }
+            else
+            {
                 SpacialAttack();
+                Debug.Log("Attack");
+            }
+
             Debug.Log("HP = " + HP);
             yield return new WaitForSeconds(5f);
         }
@@ -83,8 +99,19 @@ public class LichController : MonoBehaviour
     {
         if(other.CompareTag("Bullet"))
         {
-            Debug.Log("SSEE");
+            Debug.Log("Hit -> HP: " + HP);
             Hit(5);
         }
+    }
+
+    void SummonTracingBullet()
+    {
+        Instantiate(tracingBullet, transform.position + new Vector3(1.2f, 5, -15), transform.rotation);
+    }
+
+    void SummonMonster()
+    {
+        Instantiate(Monster, transform.position + new Vector3(4.2f, 0, -5f), transform.rotation);
+        Instantiate(Monster, transform.position + new Vector3(-2.8f, 0, -5f), transform.rotation);
     }
 }
