@@ -7191,7 +7191,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerSpeed: 5
-  is_script_time: 0
 --- !u!1 &3958632434865496739
 GameObject:
   m_ObjectHideFlags: 0

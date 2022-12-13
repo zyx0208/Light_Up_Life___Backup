@@ -13,15 +13,15 @@ public class PlayerController : MonoBehaviour
     private float gravityValue = -9.81f;
     private Animator anim;
     Animator animator;
-    public static bool is_script_time;
+    public static bool is_script_time; //스크립트가 재생될 때는 움직이지 않음
 
     // Start is called before the first frame update
     void Start()
     {
         controller = GetComponent<CharacterController>();
         anim = GetComponent<Animator>();
-        ///////////////바꿔랑
-        is_script_time = false;
+
+        is_script_time = true;
     }
 
 
