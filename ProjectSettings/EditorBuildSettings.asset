@@ -18,7 +18,7 @@ EditorBuildSettings:
     path: Assets/Scenes/4_Chapter1.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 1
-    path: Assets/Scenes/EnemyScene.unity
+    path: Assets/Scenes/aa/EnemyScene.unity
     guid: 506bfe4b786a8924a808a57013239b5f
   - enabled: 1
     path: Assets/Scenes/3_Chapter0.unity
