@@ -11,6 +11,7 @@ public class Enemy_LV2 : MonoBehaviour
     public Slider PlayerHpSlider;
     public Transform target;
     public float Damage;
+    public int stage;
     NavMeshAgent nav;
     void Awake()
     {
@@ -22,6 +23,10 @@ public class Enemy_LV2 : MonoBehaviour
     void Update()
     {
         nav.SetDestination(target.position);
+        if (PlayerHpSlider.value <= 0)
+        {
+            SceneManager.LoadScene("Scene1_" + stage);
+        }
     }
 
     void Start()

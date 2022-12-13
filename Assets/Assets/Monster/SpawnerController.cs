@@ -37,8 +37,8 @@ public class SpawnerController : MonoBehaviour
 
         if (timer == 0)
         {
-            //transform.Rotate(Vector3.up * rotateSpeed * Time.deltaTime, Space.World);
             Vector3 RandVector = new Vector3(Random.Range(0.5f, 2f), 0, Random.Range(0.5f, 2f));
+            Instantiate(monsterPrefab, transform.position + RandVector, Quaternion.identity);
             timer = SpawnCooldown;
 
         }

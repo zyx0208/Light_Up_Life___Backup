@@ -13,6 +13,8 @@ public class Enemy_LV3: MonoBehaviour
     public double E_AttackCooldown = 1.0;
     public Slider PlayerHpSlider;
     public bool isCollider = false;
+    public int stage;
+    public float Damage;
 
     NavMeshAgent nav_LV3;
     public Transform target;
@@ -51,12 +53,13 @@ public class Enemy_LV3: MonoBehaviour
         if (other.tag == "Player")
         {
             Debug.Log("사정거리 안에 플레이어가 있습니다");
+            //PlayerHpSlider.value -= Damage;
             isCollider = true;
 
             if (PlayerHpSlider.value <= 0)
             {
                 // 이거 리로드씬으로 바꾸기
-                SceneManager.LoadScene("EnemyScene");
+                SceneManager.LoadScene("Scene1_" + stage);
             }
 
         }

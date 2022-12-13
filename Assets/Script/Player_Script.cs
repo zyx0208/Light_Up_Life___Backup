@@ -8,6 +8,7 @@ public class Player_Script : MonoBehaviour
 {
     int MaxHP;
     int CurHP;
+    public int stage;
 
     AudioSource bulletSound;
     Animator animator;
@@ -109,7 +110,7 @@ public class Player_Script : MonoBehaviour
 
     public void Die()
     {
-        SceneManager.LoadScene("EnemyScene");
+        SceneManager.LoadScene("Scene1_" + stage);
     }
 
     void OnCollisionStay(Collision other)
