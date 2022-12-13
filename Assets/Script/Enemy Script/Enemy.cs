@@ -28,7 +28,7 @@ public class Enemy : MonoBehaviour
     void Start()
     {
         target = GameObject.Find("Player").transform;
-        MaxHP = 3;
+        MaxHP = 2;
         CurHP = MaxHP;
         nav = GetComponent<NavMeshAgent>();
         nav.enabled = true; //네비켜기

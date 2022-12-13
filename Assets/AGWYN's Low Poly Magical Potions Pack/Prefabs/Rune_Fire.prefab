@@ -12,9 +12,13 @@ GameObject:
   - component: {fileID: 8783299278456274058}
   - component: {fileID: 6773549498292783168}
   - component: {fileID: 1954676859481504201}
+  - component: {fileID: 1468897025}
+  - component: {fileID: 1468897024}
+  - component: {fileID: 1913181719}
+  - component: {fileID: 1913181714}
   m_Layer: 0
   m_Name: Rune_Fire
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -26,9 +30,9 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4972122498736581013}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 10, y: 70, z: 10}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -99,3 +103,59 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 3129944141888004327, guid: 40b90c0724bb16d4d86fcb375d298107, type: 3}
+--- !u!65 &1468897025
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4972122498736581013}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.20292923, y: 0.05081473, z: 0.19802596}
+  m_Center: {x: -0.00060594094, y: 0.025407365, z: 0.0043089665}
+--- !u!114 &1468897024
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4972122498736581013}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 490f488cbaf89554b97b435e32f186e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  monsterPrefab: {fileID: 2948467272945731740, guid: 417b4fba20c30914baa231e4c940f782, type: 3}
+  lightPrefab: {fileID: 0}
+  SpawnCooldown: 0
+--- !u!65 &1913181719
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4972122498736581013}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.20292915, y: 0.05081473, z: 0.19802588}
+  m_Center: {x: -0.00060617924, y: 0.025407365, z: 0.004308846}
+--- !u!114 &1913181714
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4972122498736581013}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 490f488cbaf89554b97b435e32f186e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  monsterPrefab: {fileID: 2948467272945731740, guid: 417b4fba20c30914baa231e4c940f782, type: 3}
+  lightPrefab: {fileID: 0}
+  SpawnCooldown: 0

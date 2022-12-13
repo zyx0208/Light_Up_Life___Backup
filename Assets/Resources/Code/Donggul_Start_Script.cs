@@ -20,6 +20,8 @@ public class Donggul_Start_Script : MonoBehaviour
     public GameObject characterImg;
     public Image portraitImg;
 
+    public GameObject spawner1;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -29,7 +31,7 @@ public class Donggul_Start_Script : MonoBehaviour
 
         portraits.Add("Images/Hero_common");
 
-        scripts.Add("(대충 춥고 무섭지만 힘내자라는 내용)");
+        scripts.Add("(대충 춥고 무섭지만 힘내자라는 내용 + 3개의 스포너를 부숴야 다음 스테이지로 간다는 내용)");
 
         // 일반 코드
         nextBtn.onClick.AddListener(nextScript);
@@ -65,6 +67,7 @@ public class Donggul_Start_Script : MonoBehaviour
             scriptObj.gameObject.SetActive(false);
             nextStoryBtn.SetActive(false);
             Player_Script.is_script_time = false;
+            spawner1.SetActive(true);
         }
     }
 

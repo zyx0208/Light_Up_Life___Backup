@@ -7,42 +7,57 @@ using UnityEngine.SceneManagement;
 
 public class Enemy_LV2 : MonoBehaviour
 {
-    // 몬스터가 플레이어 자동추적하는 코드 + LV2몬스터 근접공격시 슬라이더 조절
-    public Slider PlayerHpSlider;
-    public Transform target;
-    public float Damage;
-    public int stage;
-    NavMeshAgent nav;
-    void Awake()
-    {
-        nav = GetComponent<NavMeshAgent>();
-        nav.enabled = false; //네비끄기
+    int MaxHP;
+    int CurHP;
+    public float damage;
+    public Transform target; //따라갈 대상
 
-    }
+    NavMeshAgent nav;
+
 
     void Update()
     {
         nav.SetDestination(target.position);
-        if (PlayerHpSlider.value <= 0)
+        if (CurHP <= 0)
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            Die();
         }
     }
 
     void Start()
     {
+        target = GameObject.Find("Player").transform;
+        MaxHP = 3;
+        CurHP = MaxHP;
+        nav = GetComponent<NavMeshAgent>();
         nav.enabled = true; //네비켜기
+
     }
-    void OnTriggerStay(Collider other)
+
+    void OnTriggerEnter(Collider other)
     {
-
-        if (other.tag == "Player")
+        //대미지 판정
+        if (other.tag == "Bullet")
         {
-            Debug.Log("근접공격을 받고있습니다");
-            PlayerHpSlider.value -= Damage;
-
+            Debug.Log("남은 체력 = " + CurHP);
+            Damage(1);
         }
     }
 
+    public void SetHP(int hp)
+    {
+        this.MaxHP = hp;
+    }
+
+    void Die()
+    {
+        Destroy(this.gameObject);
+    }
+
+    public void Damage(int damage)
+    {
+        CurHP -= damage;
+
+    }
 
 }

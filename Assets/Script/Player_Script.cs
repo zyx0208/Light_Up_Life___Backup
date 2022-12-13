@@ -6,6 +6,17 @@ using UnityEngine.UI;
 
 public class Player_Script : MonoBehaviour
 {
+    void Damage(int damage)
+    {
+        CurHP -= damage;
+        PlayerHpSlider.value = (float)CurHP / (float)MaxHP * 10;
+    }
+
+    void Die()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+
     int MaxHP;
     int CurHP;
     public int stage;
@@ -20,7 +31,7 @@ public class Player_Script : MonoBehaviour
     private CharacterController controller;
 
     public double AttackCooldown = 0.5; //총알 발사 딜레이
-    private readonly double DamagedCooltime = 0.5; //피격 무적시간
+    public double DamagedCooltime = 1; //피격 무적시간
     public Rigidbody rigidbody_; //"rigidbody"라는 이름이 시스템에서 다른 용도로 사용 중이라서 언더바 추가
     private double timer = 0.0;
 
@@ -90,7 +101,8 @@ public class Player_Script : MonoBehaviour
             {
                 if (Input.GetMouseButton(0))
                 {
-                    Instantiate(bullet, this.transform.position, this.transform.rotation);
+                    
+                    Instantiate(bullet, new Vector3(this.transform.position.x, this.transform.position.y + 0.5f, this.transform.position.z), this.transform.rotation);
                     bulletSound.Play();
                     timer = AttackCooldown;
                 }
@@ -100,10 +112,6 @@ public class Player_Script : MonoBehaviour
             {
                 damage_timer -= Time.deltaTime;
             }
-            else if (damage_timer < 0)
-            {
-                damage_timer = 0;
-            }
 
             if (CurHP < 0)
             {
@@ -111,30 +119,28 @@ public class Player_Script : MonoBehaviour
             }
         }
 
-        void Damage(int damage)
-        {
-            CurHP -= damage;
-            PlayerHpSlider.value = (float)CurHP / (float)MaxHP * 10;
-        }
+        
 
-        void Die()
-        {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-        }
+        
+        
+    }
 
-        void OnCollisionStay(Collision other)
+    private void OnTriggerStay(Collider other)
+    {
+        if (other.tag == "Enemy")
         {
-
-            if (other.collider.tag == "Enemy")
+            if (damage_timer <= 0)
             {
-                if (damage_timer == 0)
-                {
-                    Damage(1);
-                    Debug.Log("HP " + CurHP);
-                    damage_timer = DamagedCooltime;
-                }
-
+                Damage(1);
+                Debug.Log("Player HP : " + CurHP);
+                damage_timer = DamagedCooltime;
             }
         }
     }
 }
+
+/*
+ * 
+ * 
+ * 
+*/

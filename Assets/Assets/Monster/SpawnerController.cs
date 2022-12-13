@@ -19,7 +19,7 @@ public class SpawnerController : MonoBehaviour
         MaxHP = 5;
         CurHP = MaxHP;
         SpawnCooldown = 5.0;
-        timer = SpawnCooldown;
+        timer = 0;
     }
 
     // Update is called once per frame
@@ -30,17 +30,11 @@ public class SpawnerController : MonoBehaviour
         {
             timer -= Time.deltaTime;
         }
-        else if(timer < 0)
-        {
-            timer = 0;
-        }
-
-        if (timer == 0)
+        else if(timer <= 0)
         {
             Vector3 RandVector = new Vector3(Random.Range(0.5f, 2f), 0, Random.Range(0.5f, 2f));
             Instantiate(monsterPrefab, transform.position + RandVector, Quaternion.identity);
             timer = SpawnCooldown;
-
         }
 
         if (CurHP <= 0)
@@ -60,7 +54,7 @@ public class SpawnerController : MonoBehaviour
     private void DIe()
     {
         Instantiate(lightPrefab);
-        Destroy(this.gameObject);
+        this.gameObject.SetActive(false);
     }
 
     public void Damage(int damage)
