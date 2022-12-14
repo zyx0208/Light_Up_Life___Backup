@@ -11,6 +11,7 @@ public class Enemy_LV2 : MonoBehaviour
     int CurHP;
     public float damage;
     public Transform target; //따라갈 대상
+    public GameObject lightPrefab;
 
     NavMeshAgent nav;
 
@@ -51,6 +52,7 @@ public class Enemy_LV2 : MonoBehaviour
 
     void Die()
     {
+        Instantiate(lightPrefab, new Vector3(this.transform.position.x, this.transform.position.y + 2f, this.transform.position.z), transform.rotation);
         Destroy(this.gameObject);
     }
 

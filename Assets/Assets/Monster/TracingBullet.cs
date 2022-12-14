@@ -18,9 +18,9 @@ public class TracingBullet : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(transform.position.y < 0.5)
+        if(transform.position.y < 2.5)
         {
-            transform.position = new Vector3(transform.position.x, 0.5f, transform.position.z);
+            transform.position = new Vector3(transform.position.x, 2.5f, transform.position.z);
         }
         Vector3 direction = target.transform.position - rb.position;
         direction.Normalize();

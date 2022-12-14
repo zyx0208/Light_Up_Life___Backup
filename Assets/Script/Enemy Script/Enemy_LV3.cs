@@ -20,6 +20,7 @@ public class Enemy_LV3 : MonoBehaviour
 
     NavMeshAgent nav_LV3;
     public Transform target;
+    public GameObject lightPrefab;
 
     void Awake()
     {
@@ -92,6 +93,7 @@ public class Enemy_LV3 : MonoBehaviour
 
     void Die()
     {
+        Instantiate(lightPrefab, new Vector3(this.transform.position.x, this.transform.position.y + 2f, this.transform.position.z), transform.rotation);
         this.gameObject.SetActive(false);
     }
 

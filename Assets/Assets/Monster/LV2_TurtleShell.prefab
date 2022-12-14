@@ -116,6 +116,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 0
   target: {fileID: 0}
+  lightPrefab: {fileID: 0}
 --- !u!195 &846555375983772356
 NavMeshAgent:
   m_ObjectHideFlags: 0

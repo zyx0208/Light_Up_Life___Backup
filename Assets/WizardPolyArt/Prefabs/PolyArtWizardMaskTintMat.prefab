@@ -2369,7 +2369,7 @@ GameObject:
   - component: {fileID: 1482892302}
   m_Layer: 0
   m_Name: PolyArtWizardMaskTintMat
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2474,6 +2474,7 @@ MonoBehaviour:
   stage: 0
   Damage: 0
   target: {fileID: 0}
+  lightPrefab: {fileID: 406094647339676032, guid: 4e7c7ab0f425d8e45a28d8fe2516f199, type: 3}
 --- !u!195 &1482892302
 NavMeshAgent:
   m_ObjectHideFlags: 0
