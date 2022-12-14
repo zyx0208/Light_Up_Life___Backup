@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.00038384108, g: 0.00038384108, b: 0.00038384108, a: 1}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -833,7 +833,7 @@ PrefabInstance:
     - target: {fileID: 1482892301, guid: dbf7a0c9d76b77a40af3104feac0641d, type: 3}
       propertyPath: bullet
       value: 
-      objectReference: {fileID: 1755865475335770947, guid: 6db7680dca4eb2748a7339cb3bc13d14, type: 3}
+      objectReference: {fileID: 7788662315506474872, guid: 012041c5b58739042a46c55d6eddc7a2, type: 3}
     - target: {fileID: 1482892301, guid: dbf7a0c9d76b77a40af3104feac0641d, type: 3}
       propertyPath: target
       value: 
@@ -860,7 +860,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4063552230360950, guid: dbf7a0c9d76b77a40af3104feac0641d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 4.4
+      value: 2.47
       objectReference: {fileID: 0}
     - target: {fileID: 4063552230360950, guid: dbf7a0c9d76b77a40af3104feac0641d, type: 3}
       propertyPath: m_LocalPosition.z
@@ -988,7 +988,6 @@ GameObject:
   - component: {fileID: 478984424}
   - component: {fileID: 478984423}
   - component: {fileID: 478984425}
-  - component: {fileID: 478984422}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -996,14 +995,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!81 &478984422
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 478984420}
-  m_Enabled: 1
 --- !u!20 &478984423
 Camera:
   m_ObjectHideFlags: 0
