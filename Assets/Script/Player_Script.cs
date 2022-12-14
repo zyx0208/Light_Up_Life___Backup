@@ -137,6 +137,21 @@ public class Player_Script : MonoBehaviour
             }
         }
     }
+    void OnTriggerEnter(Collider other)
+    {
+        //대미지 판정
+        if (other.tag == "Enemy_Bullet")
+        {
+            Debug.Log("총알에 맞고잇어!");
+            if (damage_timer == 0)
+            {
+                Damage(5);
+                Debug.Log("HP " + CurHP);
+                damage_timer = DamagedCooltime;
+            }
+
+        }
+    }
 }
 
 /*

@@ -35,9 +35,15 @@ public class LichController : MonoBehaviour
         
     }
 
+    void killme()
+    {
+        //¾À¹Ù²Ù´Â°Å
+    }
+
     void Die()
     {
         anim.SetBool("isDead", true);
+        Invoke("killme", 5f);
     }
 
     public void Attack1()
@@ -86,7 +92,7 @@ public class LichController : MonoBehaviour
             }
             else
             {
-                SpacialAttack();
+                Attack1();
                 Debug.Log("Attack");
             }
 

@@ -41,7 +41,7 @@ public class TracingBullet : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             GetComponent<ParticleSystem>().Play();
-            target.GetComponent<Player_Script>().Damage(3);
+            target.GetComponent<Player_Script>().Damage(1);
             this.Die();
         }
     }

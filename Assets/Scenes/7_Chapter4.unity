@@ -122,7 +122,7 @@ NavMeshSettings:
     preserveTilesOutsideBounds: 0
     debug:
       m_Flags: 0
-  m_NavMeshData: {fileID: 0}
+  m_NavMeshData: {fileID: 23800000, guid: 25eff77fb5005954ba01326df3faa020, type: 2}
 --- !u!1 &6951367
 GameObject:
   m_ObjectHideFlags: 0
@@ -710,6 +710,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PP_Meadow_Path_05
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 324d33f3ad1481c4e8ba55d696fe64d9, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 324d33f3ad1481c4e8ba55d696fe64d9, type: 3}
 --- !u!1 &395581816 stripped
@@ -809,6 +813,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PP_Lake_Ground_04
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 38b178f6a1ea19f4baf761918779b712, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 1218200818554812438, guid: 38b178f6a1ea19f4baf761918779b712, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -823,6 +831,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1482892301, guid: dbf7a0c9d76b77a40af3104feac0641d, type: 3}
+      propertyPath: bullet
+      value: 
+      objectReference: {fileID: 1755865475335770947, guid: 6db7680dca4eb2748a7339cb3bc13d14, type: 3}
+    - target: {fileID: 1482892301, guid: dbf7a0c9d76b77a40af3104feac0641d, type: 3}
       propertyPath: target
       value: 
       objectReference: {fileID: 1703197217}
@@ -836,7 +848,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1953271650171834, guid: dbf7a0c9d76b77a40af3104feac0641d, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4063552230360950, guid: dbf7a0c9d76b77a40af3104feac0641d, type: 3}
       propertyPath: m_RootOrder
@@ -844,15 +856,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4063552230360950, guid: dbf7a0c9d76b77a40af3104feac0641d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -6.42
+      value: -1.73
       objectReference: {fileID: 0}
     - target: {fileID: 4063552230360950, guid: dbf7a0c9d76b77a40af3104feac0641d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 7.34
+      value: 4.4
       objectReference: {fileID: 0}
     - target: {fileID: 4063552230360950, guid: dbf7a0c9d76b77a40af3104feac0641d, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -3.98
+      value: 2.57
       objectReference: {fileID: 0}
     - target: {fileID: 4063552230360950, guid: dbf7a0c9d76b77a40af3104feac0641d, type: 3}
       propertyPath: m_LocalRotation.w
@@ -2756,6 +2768,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 324d33f3ad1481c4e8ba55d696fe64d9, type: 3}
       propertyPath: m_Name
       value: PP_Meadow_Path_05 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 324d33f3ad1481c4e8ba55d696fe64d9, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 324d33f3ad1481c4e8ba55d696fe64d9, type: 3}

@@ -53,7 +53,7 @@ public class SpawnerController : MonoBehaviour
 
     private void DIe()
     {
-        Instantiate(lightPrefab);
+        Instantiate(lightPrefab, new Vector3(this.transform.position.x, this.transform.position.y + 2f, this.transform.position.z), transform.rotation);
         this.gameObject.SetActive(false);
     }
 

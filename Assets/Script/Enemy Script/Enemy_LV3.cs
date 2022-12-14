@@ -6,7 +6,7 @@ using UnityEngine.AI;
 using UnityEngine.SceneManagement;
 
 //원거리 공격 총알 발사 스크립트
-public class Enemy_LV3: MonoBehaviour
+public class Enemy_LV3 : MonoBehaviour
 {
     public GameObject bullet;
     public double EE_timer = 0.0;
@@ -15,6 +15,8 @@ public class Enemy_LV3: MonoBehaviour
     public bool isCollider = false;
     public int stage;
     public float Damage;
+    int MaxHP;
+    int CurHP;
 
     NavMeshAgent nav_LV3;
     public Transform target;
@@ -42,13 +44,19 @@ public class Enemy_LV3: MonoBehaviour
                 EE_timer = E_AttackCooldown;
             }
         }
+
+        if (CurHP <= 0)
+        {
+            Die();
+        }
     }
 
     void Start()
     {
         nav_LV3.enabled = true;
+        MaxHP = 5;
+        CurHP = MaxHP;
     }
-    /*
     void OnTriggerStay(Collider other)
     {
         if (other.tag == "Player")
@@ -65,10 +73,31 @@ public class Enemy_LV3: MonoBehaviour
 
         }
     }
-    */
-    void OnTriggerExit(Collider other)
+
+    void OnTriggerEnter(Collider other)
     {
-        isCollider = false;
+        //대미지 판정
+        if (other.tag == "Bullet")
+        {
+            Debug.Log("남은 체력 = " + CurHP);
+            LV3_Damage(1);
+        }
+    }
+
+    public void SetHP(int hp)
+    {
+        this.MaxHP = hp;
+    }
+
+    void Die()
+    {
+        Destroy(this.gameObject);
+    }
+
+    public void LV3_Damage(int damage)
+    {
+        CurHP -= damage;
+
     }
 
 

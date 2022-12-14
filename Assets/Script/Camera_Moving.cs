@@ -17,6 +17,6 @@ public class Camera_Moving : MonoBehaviour
 
     void Update()
     {
-        GP_target_me.position = new Vector3(GP_target.position.x, 15f, GP_target.position.z + 15f); //target의 위치에서 z값이 -10인 지점에 카메라가 따라다님
+        GP_target_me.position = new Vector3(GP_target.position.x, player.transform.position.y + 15f, GP_target.position.z + 15f); //target의 위치에서 z값이 -10인 지점에 카메라가 따라다님
     }
 }
