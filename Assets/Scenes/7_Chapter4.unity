@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+  m_IndirectSpecularColor: {r: 0.00038384108, g: 0.00038384108, b: 0.00038384108, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -335,6 +335,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 79779845656ad424ea99f79a6efbd4bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 1792937474}
 --- !u!65 &71384112
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -399,6 +400,7 @@ MonoBehaviour:
   backgroundImg: {fileID: 1024897508}
   characterImg: {fileID: 455095671}
   portraitImg: {fileID: 455095673}
+  monster: {fileID: 412691263}
 --- !u!1 &108038591
 GameObject:
   m_ObjectHideFlags: 0
@@ -831,10 +833,6 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1482892301, guid: dbf7a0c9d76b77a40af3104feac0641d, type: 3}
-      propertyPath: bullet
-      value: 
-      objectReference: {fileID: 7788662315506474872, guid: 012041c5b58739042a46c55d6eddc7a2, type: 3}
-    - target: {fileID: 1482892301, guid: dbf7a0c9d76b77a40af3104feac0641d, type: 3}
       propertyPath: target
       value: 
       objectReference: {fileID: 1703197217}
@@ -846,25 +844,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: LV3_Wizard
       objectReference: {fileID: 0}
-    - target: {fileID: 1953271650171834, guid: dbf7a0c9d76b77a40af3104feac0641d, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 4063552230360950, guid: dbf7a0c9d76b77a40af3104feac0641d, type: 3}
       propertyPath: m_RootOrder
       value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 4063552230360950, guid: dbf7a0c9d76b77a40af3104feac0641d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.73
+      value: -20.01
       objectReference: {fileID: 0}
     - target: {fileID: 4063552230360950, guid: dbf7a0c9d76b77a40af3104feac0641d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.47
+      value: 4.84
       objectReference: {fileID: 0}
     - target: {fileID: 4063552230360950, guid: dbf7a0c9d76b77a40af3104feac0641d, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 2.57
+      value: 5.62
       objectReference: {fileID: 0}
     - target: {fileID: 4063552230360950, guid: dbf7a0c9d76b77a40af3104feac0641d, type: 3}
       propertyPath: m_LocalRotation.w
@@ -2039,7 +2033,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 56b864c0ef4949e4985b7643e7a2b6f5, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

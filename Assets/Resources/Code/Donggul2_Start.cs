@@ -19,6 +19,7 @@ public class Donggul2_Start : MonoBehaviour
     public GameObject backgroundImg;
     public GameObject characterImg;
     public Image portraitImg;
+    public GameObject monster;
 
     // Start is called before the first frame update
     void Start()
@@ -41,6 +42,7 @@ public class Donggul2_Start : MonoBehaviour
         portraitImg.GetComponent<Image>().sprite = Resources.Load<Sprite>(portraits[checkScriptLine].ToString());
         nextStoryBtn.SetActive(false);
         Invoke("showNextBtn", 2.5f);
+        monster.SetActive(false);
     }
 
     void nextScript()
@@ -65,6 +67,7 @@ public class Donggul2_Start : MonoBehaviour
             scriptObj.gameObject.SetActive(false);
             nextStoryBtn.SetActive(false);
             Player_Script.is_script_time = false;
+            monster.SetActive(true);
         }
     }
 

@@ -2,6 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Rendering;
+using UnityEngine.UI;
+using UnityEngine.SceneManagement;
+using UnityEngine.EventSystems;
 
 public class LichController : MonoBehaviour
 {
@@ -37,7 +40,7 @@ public class LichController : MonoBehaviour
 
     void killme()
     {
-        //¾À¹Ù²Ù´Â°Å
+        SceneManager.LoadScene("10_THE_END");
     }
 
     void Die()

@@ -92,7 +92,7 @@ public class Enemy_LV3 : MonoBehaviour
 
     void Die()
     {
-        Destroy(this.gameObject);
+        this.gameObject.SetActive(false);
     }
 
     public void LV3_Damage(int damage)

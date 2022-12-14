@@ -2466,7 +2466,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b3a2e47494b8779469f893d60e20430c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bullet: {fileID: 4199143115356664583, guid: a501219ff3ba3ab42aae76e837efaea0, type: 3}
+  bullet: {fileID: 7788662315506474872, guid: 012041c5b58739042a46c55d6eddc7a2, type: 3}
   EE_timer: 0
   E_AttackCooldown: 2
   PlayerHpSlider: {fileID: 0}
