@@ -51,7 +51,7 @@ public class Player_Script : MonoBehaviour
 
     void Start()
     {
-        MaxHP = 10;
+        MaxHP = 20;
         CurHP = MaxHP;
 
         // this.transform.position = new Vector3(0, 1, 0); //시작점 설정
@@ -143,7 +143,7 @@ public class Player_Script : MonoBehaviour
         if (other.tag == "Enemy_Bullet")
         {
             Debug.Log("총알에 맞고있어!");
-            if (damage_timer == 0)
+            if (damage_timer <= 0)
             {
                 Damage(5);
                 Debug.Log("HP " + CurHP);

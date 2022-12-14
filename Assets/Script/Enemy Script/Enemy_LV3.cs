@@ -40,7 +40,7 @@ public class Enemy_LV3 : MonoBehaviour
         {
             if (isCollider)
             {
-                Instantiate(bullet, this.transform.position, this.transform.rotation);
+                Instantiate(bullet, this.transform.position + new Vector3(0, 1, 0), this.transform.rotation);
 
                 EE_timer = E_AttackCooldown;
             }
