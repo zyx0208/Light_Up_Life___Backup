@@ -29,7 +29,7 @@ public class Donggul3_Start : MonoBehaviour
 
         portraits.Add("Images/Hero_common");
 
-        scripts.Add("(대충 이것저것 몬스터 나온다는 경고)");
+        scripts.Add("(레벨3 몬스터 2마리 + 스포너 한개 나올 예정) + (대충 점점 악한 기운이 더 느껴진다는 기분)");
 
         // 일반 코드
         nextBtn.onClick.AddListener(nextScript);

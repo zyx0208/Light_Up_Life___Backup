@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: -5417350983371408706}
   m_Layer: 0
   m_Name: Mountain 3
-  m_TagString: Untagged
+  m_TagString: Walls
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -26,7 +26,8 @@ Transform:
   m_GameObject: {fileID: 6330053009667153852}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1, y: 3, z: 0.5}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 7297835685719995837}
   m_Father: {fileID: 0}
@@ -112,11 +113,11 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: b547fabffb612b54cbcd362679c24771, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: fba2869b4b1ab82448fb748decad77ee, type: 2}
+      objectReference: {fileID: 2100000, guid: 95691847fc5146b49adf60cdc5df94f9, type: 2}
     - target: {fileID: -7511558181221131132, guid: b547fabffb612b54cbcd362679c24771, type: 3}
       propertyPath: m_Materials.Array.data[1]
       value: 
-      objectReference: {fileID: 2100000, guid: 7ce0c47ef4bba284cb042c82a05e5e0a, type: 2}
+      objectReference: {fileID: -4815649156946952674, guid: c58bf2ef4ba7f9b40b70931e47c4aaf0, type: 3}
     - target: {fileID: 919132149155446097, guid: b547fabffb612b54cbcd362679c24771, type: 3}
       propertyPath: m_Name
       value: Mountain_3

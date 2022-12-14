@@ -48,6 +48,7 @@ public class Enemy_LV3: MonoBehaviour
     {
         nav_LV3.enabled = true;
     }
+    /*
     void OnTriggerStay(Collider other)
     {
         if (other.tag == "Player")
@@ -64,7 +65,7 @@ public class Enemy_LV3: MonoBehaviour
 
         }
     }
-
+    */
     void OnTriggerExit(Collider other)
     {
         isCollider = false;

@@ -29,7 +29,7 @@ public class Donggul2_Start : MonoBehaviour
 
         portraits.Add("Images/Hero_common");
 
-        scripts.Add("(대충 레벨3 몬스터를 보고 강력한 적이 있다는 경고 + 물 웅덩이가 오염되서 접근하지 말라는 경고)");
+        scripts.Add("(대충 레벨3 몬스터(1마리)를 보고 강력한 적이 있다는 경고 + 물 웅덩이가 오염되서 접근하지 말라는 경고 + 다 잡으면 아래 길로 가보자는 내용도 넣을건데 LV.3 몬스터가 이상함)");
 
         // 일반 코드
         nextBtn.onClick.AddListener(nextScript);
