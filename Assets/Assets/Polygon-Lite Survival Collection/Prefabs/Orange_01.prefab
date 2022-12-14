@@ -13,9 +13,10 @@ GameObject:
   - component: {fileID: 2397786483855708882}
   - component: {fileID: 8008466066414261270}
   - component: {fileID: -4070412327102854450}
+  - component: {fileID: 1072965819246862124}
   m_Layer: 0
   m_Name: Orange_01
-  m_TagString: Untagged
+  m_TagString: Enemy_Bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -94,7 +95,7 @@ MeshCollider:
   m_GameObject: {fileID: 4199143115356664583}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   m_Convex: 1
   m_CookingOptions: 30
@@ -113,5 +114,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   E_disappear_time: 2
   E_speed: 10
-  PlayerHpSlider: {fileID: 0}
-  B_Damage: 1
+--- !u!135 &1072965819246862124
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4199143115356664583}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.1
+  m_Center: {x: 0.006319487, y: -0.01772451, z: 0.003892401}
