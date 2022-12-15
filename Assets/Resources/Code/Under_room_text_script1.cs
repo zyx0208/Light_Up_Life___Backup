@@ -19,6 +19,7 @@ public class Under_room_text_script1 : MonoBehaviour
     public GameObject backgroundImg;
     public GameObject characterImg;
     public Image portraitImg;
+    public GameObject Click_sound;
 
     // Start is called before the first frame update
     void Start()
@@ -56,6 +57,7 @@ public class Under_room_text_script1 : MonoBehaviour
     {
         if (checkScriptLine < 3) //대사가 1일 때, 여긴 0
         {
+            Click_sound.GetComponent<AudioSource>().Play();
             ++checkScriptLine;
             scriptObj.text = "";
             StartCoroutine(Typing(scripts[checkScriptLine]));
@@ -68,6 +70,7 @@ public class Under_room_text_script1 : MonoBehaviour
         }
         else
         {
+            Click_sound.GetComponent<AudioSource>().Play();
             backgroundImg.SetActive(false);
             characterImg.SetActive(false);
             nameObj.gameObject.SetActive(false);

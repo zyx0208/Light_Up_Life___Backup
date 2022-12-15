@@ -21,6 +21,7 @@ public class Donggul_Start_Script : MonoBehaviour
     public Image portraitImg;
 
     public GameObject spawner1;
+    public GameObject Click_sound;
 
     // Start is called before the first frame update
     void Start()
@@ -55,6 +56,7 @@ public class Donggul_Start_Script : MonoBehaviour
     {
         if (checkScriptLine < 2)
         {
+            Click_sound.GetComponent<AudioSource>().Play();
             ++checkScriptLine;
             scriptObj.text = "";
             StartCoroutine(Typing(scripts[checkScriptLine]));
@@ -67,6 +69,7 @@ public class Donggul_Start_Script : MonoBehaviour
         }
         else
         {
+            Click_sound.GetComponent<AudioSource>().Play();
             backgroundImg.SetActive(false);
             characterImg.SetActive(false);
             nameObj.gameObject.SetActive(false);

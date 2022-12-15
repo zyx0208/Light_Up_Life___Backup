@@ -9,6 +9,8 @@ public class Boss_Start_Wall : MonoBehaviour
     public GameObject wall3;
     public GameObject wall4;
     public GameObject Boss;
+    public GameObject off_sound;
+    public GameObject on_sound;
     private void Start()
     {
         wall1.SetActive(false);
@@ -27,6 +29,8 @@ public class Boss_Start_Wall : MonoBehaviour
             wall3.SetActive(true);
             wall4.SetActive(true);
             Boss.SetActive(true);
+            on_sound.SetActive(true);
+            off_sound.SetActive(false);
         }
     }
 }

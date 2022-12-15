@@ -21,6 +21,7 @@ public class Danger_wall_event : MonoBehaviour
     public Image portraitImg;
     public GameObject monster1;
     public GameObject monster2;
+    public GameObject Click_sound;
 
     // Start is called before the first frame update
     void Start()
@@ -50,6 +51,7 @@ public class Danger_wall_event : MonoBehaviour
     {
         if (checkScriptLine < 0)
         {
+            Click_sound.GetComponent<AudioSource>().Play();
             ++checkScriptLine;
             scriptObj.text = "";
             StartCoroutine(Typing(scripts[checkScriptLine]));
@@ -62,6 +64,7 @@ public class Danger_wall_event : MonoBehaviour
         }
         else
         {
+            Click_sound.GetComponent<AudioSource>().Play();
             backgroundImg.SetActive(false);
             characterImg.SetActive(false);
             nameObj.gameObject.SetActive(false);

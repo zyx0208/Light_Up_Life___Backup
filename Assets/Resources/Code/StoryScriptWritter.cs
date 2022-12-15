@@ -15,6 +15,9 @@ public class StoryScriptWritter : MonoBehaviour
     public GameObject backgroundImg;
     public Image background;
     public Button nextBtn;
+    public GameObject change_audio;
+    public GameObject Click_sound;
+
 
     // Start is called before the first frame update
     void Start()
@@ -52,7 +55,12 @@ public class StoryScriptWritter : MonoBehaviour
     void nextScript()
     {
         if (checkScriptLine < 7) {
+            Click_sound.GetComponent<AudioSource>().Play();
             ++checkScriptLine;
+            if (checkScriptLine == 3)
+            {
+                change_audio.GetComponent<AudioSource>().pitch = 0.6f;
+            }
             scriptObj.text = "";
             StartCoroutine(Typing(scripts[checkScriptLine]));
             background.GetComponent<Image>().sprite = Resources.Load<Sprite>(images[checkScriptLine].ToString());

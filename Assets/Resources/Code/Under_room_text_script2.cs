@@ -23,7 +23,7 @@ public class Under_room_text_script2 : MonoBehaviour
     public GameObject Lamp_light;
     public GameObject Player_Flash_light;
     public GameObject Player_Lamp_light;
-
+    public GameObject Click_sound;
     // Start is called before the first frame update
     void Start()
     {
@@ -72,6 +72,7 @@ public class Under_room_text_script2 : MonoBehaviour
     {
         if (checkScriptLine < 7)
         {
+            Click_sound.GetComponent<AudioSource>().Play();
             ++checkScriptLine;
             scriptObj.text = "";
             StartCoroutine(Typing(scripts[checkScriptLine]));
@@ -84,6 +85,7 @@ public class Under_room_text_script2 : MonoBehaviour
         }
         else
         {
+            Click_sound.GetComponent<AudioSource>().Play();
             backgroundImg.SetActive(false);
             characterImg.SetActive(false);
             nameObj.gameObject.SetActive(false);

@@ -15,6 +15,7 @@ public class Ending_Story : MonoBehaviour
     public GameObject backgroundImg;
     public Image background;
     public Button nextBtn;
+    public GameObject Click_sound;
 
     // Start is called before the first frame update
     void Start()
@@ -27,10 +28,10 @@ public class Ending_Story : MonoBehaviour
         scripts.Add("시간이 지나고...");
         scripts.Add("만다린 왕국에서 살아가던 어느 날, 한 소녀가 주인공을 찾아왔습니다.");
         scripts.Add("\"저기...\"");
-        scripts.Add("주인공은 순간 놀라 말을잇지 못했습니다.");
+        scripts.Add("주인공은 순간 놀라 말을 잇지 못했습니다.");
         scripts.Add("동굴 속 액자에서 봤던 그 소녀가 주인공의 눈 앞에 서있었기 때문입니다.");
         scripts.Add("\"당신이 아버지의 뜻을 이뤄주셨군요...\"");
-        scripts.Add("\"우리 가족, 아니 이 세상 모든 사람의 삶을 다시 빛비추어주셔서 감사해요.\"");
+        scripts.Add("\"우리 가족, 아니 이 세상 모든 사람의 삶을 다시 밝게 만들어 주셔서 감사해요.\"");
         scripts.Add("[ LIGHT UP LIFE ]");
 
         images.Add("Images/the_hero");
@@ -59,6 +60,7 @@ public class Ending_Story : MonoBehaviour
     {
         if (checkScriptLine < 10)
         {
+            Click_sound.GetComponent<AudioSource>().Play();
             ++checkScriptLine;
             scriptObj.text = "";
             StartCoroutine(Typing(scripts[checkScriptLine]));
@@ -69,6 +71,7 @@ public class Ending_Story : MonoBehaviour
         }
         else
         {
+            Click_sound.GetComponent<AudioSource>().Play();
             SceneManager.LoadScene("1_MainMenu");
         }
     }

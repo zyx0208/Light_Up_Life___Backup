@@ -19,6 +19,7 @@ public class Mid_talking : MonoBehaviour
     public GameObject backgroundImg;
     public GameObject characterImg;
     public Image portraitImg;
+    public GameObject Click_sound;
 
     // Start is called before the first frame update
     void Start()
@@ -56,6 +57,7 @@ public class Mid_talking : MonoBehaviour
     {
         if (checkScriptLine < 3)
         {
+            Click_sound.GetComponent<AudioSource>().Play();
             ++checkScriptLine;
             scriptObj.text = "";
             StartCoroutine(Typing(scripts[checkScriptLine]));
@@ -75,6 +77,7 @@ public class Mid_talking : MonoBehaviour
         }
         else
         {
+            Click_sound.GetComponent<AudioSource>().Play();
             backgroundImg.SetActive(false);
             characterImg.SetActive(false);
             nameObj.gameObject.SetActive(false);

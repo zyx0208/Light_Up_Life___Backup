@@ -19,6 +19,7 @@ public class Under_room_text_script3 : MonoBehaviour
     public GameObject backgroundImg;
     public GameObject characterImg;
     public Image portraitImg;
+    public GameObject Click_sound;
 
     // Start is called before the first frame update
     void Start()
@@ -40,7 +41,7 @@ public class Under_room_text_script3 : MonoBehaviour
         portraits.Add("Images/Portrait_empty");
 
         scripts.Add("대단한데? 내 힘을 이렇게나 잘 다루다니… 여튼, 내가 지금 이 상황을 설명해 줄게!");
-        scripts.Add("그렇게 아네모네는 주인공에게 지금의 사태에 대해서 자세하게 설명해 준다.");
+        scripts.Add("그렇게 아네모네는 주인공에게 지금의 사태에 대해서 자세하게 설명해주었습니다.");
         scripts.Add("아니… 그렇다면 이 모든 게 어둠의 마녀가 일으킨 짓이라고?");
         scripts.Add("그래, 우리 둘이 힘을 합쳐 어둠의 마녀를 봉인시키면 예전처럼 돌아갈 수 있어!");
         scripts.Add("오케이, 나 노력해 볼게!");
@@ -63,6 +64,7 @@ public class Under_room_text_script3 : MonoBehaviour
     {
         if (checkScriptLine < 5)
         {
+            Click_sound.GetComponent<AudioSource>().Play();
             ++checkScriptLine;
             scriptObj.text = "";
             StartCoroutine(Typing(scripts[checkScriptLine]));
@@ -75,6 +77,7 @@ public class Under_room_text_script3 : MonoBehaviour
         }
         else
         {
+            Click_sound.GetComponent<AudioSource>().Play();
             backgroundImg.SetActive(false);
             characterImg.SetActive(false);
             nameObj.gameObject.SetActive(false);

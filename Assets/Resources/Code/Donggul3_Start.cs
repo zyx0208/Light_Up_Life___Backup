@@ -22,6 +22,7 @@ public class Donggul3_Start : MonoBehaviour
     public GameObject monster1;
     public GameObject monster2;
     public GameObject monster3;
+    public GameObject Click_sound;
 
 
     // Start is called before the first frame update
@@ -65,6 +66,7 @@ public class Donggul3_Start : MonoBehaviour
     {
         if (checkScriptLine < 3)
         {
+            Click_sound.GetComponent<AudioSource>().Play();
             ++checkScriptLine;
             scriptObj.text = "";
             StartCoroutine(Typing(scripts[checkScriptLine]));
@@ -77,6 +79,7 @@ public class Donggul3_Start : MonoBehaviour
         }
         else
         {
+            Click_sound.GetComponent<AudioSource>().Play();
             backgroundImg.SetActive(false);
             characterImg.SetActive(false);
             nameObj.gameObject.SetActive(false);

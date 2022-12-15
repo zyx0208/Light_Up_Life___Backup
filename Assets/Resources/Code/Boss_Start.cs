@@ -20,6 +20,7 @@ public class Boss_Start : MonoBehaviour
     public GameObject backgroundImg;
     public GameObject characterImg;
     public Image portraitImg;
+    public GameObject Click_sound;
 
     // Start is called before the first frame update
     void Start()
@@ -63,6 +64,7 @@ public class Boss_Start : MonoBehaviour
     {
         if (checkScriptLine < 5)
         {
+            Click_sound.GetComponent<AudioSource>().Play();
             ++checkScriptLine;
             scriptObj.text = "";
             StartCoroutine(Typing(scripts[checkScriptLine]));
@@ -82,6 +84,7 @@ public class Boss_Start : MonoBehaviour
         }
         else
         {
+            Click_sound.GetComponent<AudioSource>().Play();
             backgroundImg.SetActive(false);
             characterImg.SetActive(false);
             nameObj.gameObject.SetActive(false);
