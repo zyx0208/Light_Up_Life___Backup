@@ -27,12 +27,18 @@ public class Donggul_Start_Script : MonoBehaviour
     {
         portraitImg = characterImg.GetComponent<Image>();
         // 스크립트 작성하는 곳
+        names.Add("아네모네");
         names.Add("주인공");
+        names.Add("아네모네");
 
+        portraits.Add("Images/Portrait_empty");
         portraits.Add("Images/Hero_common");
+        portraits.Add("Images/Portrait_empty");
 
-        scripts.Add("(대충 춥고 무섭지만 힘내자라는 내용 + 3개의 스포너를 부숴야 다음 스테이지로 간다는 내용)");
-
+        scripts.Add("이 앞에서 어둠의 힘이 담긴 무언가가 있어. 3개인가…? 이걸 먼저 파괴해야 할 것 같아.");
+        scripts.Add("오케이! 그럼 들어간다!");
+        scripts.Add("다 부순 다음에 오른쪽으로 쭉 가면 돼!");
+        
         // 일반 코드
         nextBtn.onClick.AddListener(nextScript);
 
@@ -47,7 +53,7 @@ public class Donggul_Start_Script : MonoBehaviour
 
     void nextScript()
     {
-        if (checkScriptLine < 0)
+        if (checkScriptLine < 2)
         {
             ++checkScriptLine;
             scriptObj.text = "";

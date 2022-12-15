@@ -26,11 +26,26 @@ public class Boss_Start : MonoBehaviour
     {
         portraitImg = characterImg.GetComponent<Image>();
         // 스크립트 작성하는 곳
+        names.Add("나레이션");
+        names.Add("주인공");
+        names.Add("아네모네");
+        names.Add("주인공");
+        names.Add("아네모네");
         names.Add("주인공");
 
+        portraits.Add("Images/Portrait_empty");
+        portraits.Add("Images/Hero_help");
+        portraits.Add("Images/Portrait_empty");
+        portraits.Add("Images/Hero_help");
+        portraits.Add("Images/Portrait_empty");
         portraits.Add("Images/Hero_common");
 
-        scripts.Add("(대충 이 앞에 심상치 않은 게 있다는 경고)");
+        scripts.Add("수많은 시체가 뒤덮인 검은 산이 주인공 일행을 반겨주었다.");
+        scripts.Add("아니… 도대체 이게 무슨 일이 일어난거지?");
+        scripts.Add("수많은 사람들이 빛의 가호를 되찾기 위해 이 곳에 왔다는 사실은 알고 있었지만 이정도로 많은 사람들이 희생되었을거라곤…");
+        scripts.Add("나도… 결국은 이렇게 되는걸까?");
+        scripts.Add("아니야, 너라면 마녀를 쓰러뜨릴 수 있어! 우리 지금까지 잘 극복해 왔잖아!");
+        scripts.Add("그래, 우선은 부딪쳐 보자!");
 
         // 일반 코드
         nextBtn.onClick.AddListener(nextScript);
@@ -46,7 +61,7 @@ public class Boss_Start : MonoBehaviour
 
     void nextScript()
     {
-        if (checkScriptLine < 0)
+        if (checkScriptLine < 5)
         {
             ++checkScriptLine;
             scriptObj.text = "";
@@ -56,7 +71,14 @@ public class Boss_Start : MonoBehaviour
 
             Debug.Log("Show Next Script");
             nextStoryBtn.SetActive(false);
-            Invoke("showNextBtn", 2.5f);
+            if (checkScriptLine == 2)
+            {
+                Invoke("showNextBtn", 4.0f);
+            }
+            else
+            {
+                Invoke("showNextBtn", 3.0f);
+            }
         }
         else
         {

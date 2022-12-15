@@ -3243,6 +3243,9 @@ MonoBehaviour:
   backgroundImg: {fileID: 1351860597}
   characterImg: {fileID: 68475150}
   portraitImg: {fileID: 68475152}
+  Lamp_light: {fileID: 1388032357}
+  Player_Flash_light: {fileID: 1251668767}
+  Player_Lamp_light: {fileID: 734992697}
 --- !u!1001 &625787050
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3797,9 +3800,6 @@ MonoBehaviour:
   off_scr: {fileID: 2599423941029201101}
   monster: {fileID: 630922330}
   player: {fileID: 893318186692431547}
-  Lamp_light: {fileID: 1388032357}
-  Player_Flash_light: {fileID: 1251668767}
-  Player_Lamp_light: {fileID: 734992697}
 --- !u!65 &732818491
 BoxCollider:
   m_ObjectHideFlags: 0

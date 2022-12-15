@@ -25,11 +25,20 @@ public class Go_to_donggul_Script : MonoBehaviour
     {
         portraitImg = characterImg.GetComponent<Image>();
         // 스크립트 작성하는 곳
+        names.Add("아네모네");
+        names.Add("아네모네");
         names.Add("주인공");
+        names.Add("아네모네");
 
-        portraits.Add("Images/Hero_common");
+        portraits.Add("Images/Portrait_empty");
+        portraits.Add("Images/Portrait_empty");
+        portraits.Add("Images/Hero_question");
+        portraits.Add("Images/Portrait_empty");
 
-        scripts.Add("(대충 요정이 동굴 가자는 내용 + 여기 맵 중간 중간에 슬라임 넣어도 좋을듯)");
+        scripts.Add("이 길을 쭉 따라가면 동굴이 나올거야!");
+        scripts.Add("그 동굴 가장 깊은 곳에 어둠의 마녀가 있어! 이 녀석, 예전의 버릇을 못 고쳤네…");
+        scripts.Add("그게 무슨 소리야?");
+        scripts.Add("아 아니야… 일단 출발하자.");
 
         // 일반 코드
         nextBtn.onClick.AddListener(nextScript);
@@ -45,7 +54,7 @@ public class Go_to_donggul_Script : MonoBehaviour
 
     void nextScript()
     {
-        if (checkScriptLine < 0)
+        if (checkScriptLine < 3)
         {
             ++checkScriptLine;
             scriptObj.text = "";

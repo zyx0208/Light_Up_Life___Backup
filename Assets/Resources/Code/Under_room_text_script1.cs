@@ -26,10 +26,19 @@ public class Under_room_text_script1 : MonoBehaviour
         portraitImg = characterImg.GetComponent<Image>();
         // 스크립트 작성하는 곳
         names.Add("주인공");
+        names.Add("주인공");
+        names.Add("나레이션");
+        names.Add("주인공");
 
+        portraits.Add("Images/Hero_help");
+        portraits.Add("Images/Hero_question");
+        portraits.Add("Images/Portrait_empty");
         portraits.Add("Images/Hero_common");
 
-        scripts.Add("(대충 \"저 방에서 빛이 나네?\"하는 내용)");
+        scripts.Add("지하실에 들어왔더니, 이거야 원 퀘퀘한 냄새가 나네.");
+        scripts.Add("자주 청소해 둘걸… 근데 아까 그 빛이 사라졌잖아? 어디로 간 거지?");
+        scripts.Add("빛의 행방을 놓쳐버린 주인공. 하지만, 바로 앞 방에서 빛이 다시 나기 시작하는데…");
+        scripts.Add("찾았다, 저기서 빛이 나오고 있어!");
 
         // 일반 코드
         nextBtn.onClick.AddListener(nextScript);
@@ -45,7 +54,7 @@ public class Under_room_text_script1 : MonoBehaviour
 
     void nextScript()
     {
-        if (checkScriptLine < 0)
+        if (checkScriptLine < 3) //대사가 1일 때, 여긴 0
         {
             ++checkScriptLine;
             scriptObj.text = "";

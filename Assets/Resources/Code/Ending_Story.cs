@@ -21,23 +21,29 @@ public class Ending_Story : MonoBehaviour
     {
         background = backgroundImg.GetComponent<Image>();
 
-        scripts.Add("빛을 뺏어간 악당을 물리치자, 세상은 다시 빛으로 가득 채워졌습니다.");
-        scripts.Add("그리고 주인공은 왕국 사람들에게 환호를 받았습니다.");
-        scripts.Add("새로운 영웅의 탄생이었죠.");
-        scripts.Add("그러던 어느날,");
-        scripts.Add("치킨");
-        scripts.Add("먹고");
-        scripts.Add("싶은");
-        scripts.Add("나");
+        scripts.Add("그렇게 주인공은 마녀를 물리치는데 성공하고,");
+        scripts.Add("온 세상은 아무일 없었다는 듯 다시 밝게 빛나기 시작했습니다.");
+        scripts.Add("아네모네는 감사를 전하며 다른 왕국들을 살펴보고 오겠다며 떠났습니다.");
+        scripts.Add("시간이 지나고...");
+        scripts.Add("만다린 왕국에서 살아가던 어느 날, 한 소녀가 주인공을 찾아왔습니다.");
+        scripts.Add("\"저기...\"");
+        scripts.Add("주인공은 순간 놀라 말을잇지 못했습니다.");
+        scripts.Add("동굴 속 액자에서 봤던 그 소녀가 주인공의 눈 앞에 서있었기 때문입니다.");
+        scripts.Add("\"당신이 아버지의 뜻을 이뤄주셨군요...\"");
+        scripts.Add("\"우리 가족, 아니 이 세상 모든 사람의 삶을 다시 빛비추어주셔서 감사해요.\"");
+        scripts.Add("[ LIGHT UP LIFE ]");
 
+        images.Add("Images/the_hero");
         images.Add("Images/Story_0_02_Background");
-        images.Add("Images/the_hero");
-        images.Add("Images/the_hero");
+        images.Add("Images/yojeong");
         images.Add("Images/Story_0_06_Background");
-        images.Add("Images/Story_0_06_Background");
-        images.Add("Images/Story_0_06_Background");
-        images.Add("Images/Story_0_06_Background");
-        images.Add("Images/Story_0_06_Background");
+        images.Add("Images/girl");
+        images.Add("Images/girl");
+        images.Add("Images/girl");
+        images.Add("Images/girl");
+        images.Add("Images/girl");
+        images.Add("Images/girl");
+        images.Add("Images/Ending");
 
         nextBtn.onClick.AddListener(nextScript);
 
@@ -51,7 +57,7 @@ public class Ending_Story : MonoBehaviour
 
     void nextScript()
     {
-        if (checkScriptLine < 7)
+        if (checkScriptLine < 10)
         {
             ++checkScriptLine;
             scriptObj.text = "";

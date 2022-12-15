@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 using UnityEngine.EventSystems;
 using System.Runtime.InteropServices;
 
-public class Donggul3_Start : MonoBehaviour
+public class Mid_talking : MonoBehaviour
 {
     public Text scriptObj;
     public Text nameObj;
@@ -19,30 +19,26 @@ public class Donggul3_Start : MonoBehaviour
     public GameObject backgroundImg;
     public GameObject characterImg;
     public Image portraitImg;
-    public GameObject monster1;
-    public GameObject monster2;
-    public GameObject monster3;
-
 
     // Start is called before the first frame update
     void Start()
     {
         portraitImg = characterImg.GetComponent<Image>();
         // 스크립트 작성하는 곳
-        names.Add("아네모네");
         names.Add("주인공");
-        names.Add("아네모네");
-        names.Add("주인공");
+        names.Add("나레이션");
+        names.Add("나레이션");
+        names.Add("[쪽지]");
 
-        portraits.Add("Images/Portrait_empty");
         portraits.Add("Images/Hero_question");
         portraits.Add("Images/Portrait_empty");
-        portraits.Add("Images/Hero_common");
+        portraits.Add("Images/Portrait_empty");
+        portraits.Add("Images/Portrait_empty");
 
-        scripts.Add("점점 어둠의 기운이 강해지는 거 같아...");
-        scripts.Add("근데 넌 왜 안싸워?");
-        scripts.Add("다 물리친 다음에 위쪽으로 가면 될 것 같아!");
-        scripts.Add("(무시당했다...)");
+        scripts.Add("잠깐… 아래 이 사진은 뭐지?");
+        scripts.Add("바닥에서 일부가 검게 그을린 사진을 발견했다. 사진속에는 화목한 가족의 모습이 담겨있다.");
+        scripts.Add("뒷편에는 짧은 쪽지가 적혀있다.");
+        scripts.Add("아마 나는 여기까지 인 것같다. 소중한 나의 가족들아.. 평범한 일상을 되찾아 주지 못해 미안하다. 부디 이 쪽지가 누군가에게 발견되길.. 그리고 꼭 마녀를 물리쳐 온 세상이 빛으로 가득한 평범한 날들을 되찾길…");
 
         // 일반 코드
         nextBtn.onClick.AddListener(nextScript);
@@ -54,11 +50,6 @@ public class Donggul3_Start : MonoBehaviour
         portraitImg.GetComponent<Image>().sprite = Resources.Load<Sprite>(portraits[checkScriptLine].ToString());
         nextStoryBtn.SetActive(false);
         Invoke("showNextBtn", 2.5f);
-
-        monster1.SetActive(false);
-        monster2.SetActive(false);
-        monster3.SetActive(false);
-
     }
 
     void nextScript()
@@ -73,7 +64,14 @@ public class Donggul3_Start : MonoBehaviour
 
             Debug.Log("Show Next Script");
             nextStoryBtn.SetActive(false);
-            Invoke("showNextBtn", 2.5f);
+            if (checkScriptLine == 3)
+            {
+                Invoke("showNextBtn", 6.0f);
+            }
+            else
+            {
+                Invoke("showNextBtn", 2.5f);
+            }
         }
         else
         {
@@ -83,9 +81,6 @@ public class Donggul3_Start : MonoBehaviour
             scriptObj.gameObject.SetActive(false);
             nextStoryBtn.SetActive(false);
             Player_Script.is_script_time = false;
-            monster1.SetActive(true);
-            monster2.SetActive(true);
-            monster3.SetActive(true);
         }
     }
 

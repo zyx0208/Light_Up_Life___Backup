@@ -26,11 +26,26 @@ public class Donggul2_Start : MonoBehaviour
     {
         portraitImg = characterImg.GetComponent<Image>();
         // 스크립트 작성하는 곳
+        names.Add("아네모네");
         names.Add("주인공");
+        names.Add("주인공");
+        names.Add("아네모네");
+        names.Add("주인공");
+        names.Add("아네모네");
 
+        portraits.Add("Images/Portrait_empty");
+        portraits.Add("Images/Hero_help");
+        portraits.Add("Images/Hero_help");
+        portraits.Add("Images/Portrait_empty");
         portraits.Add("Images/Hero_common");
+        portraits.Add("Images/Portrait_empty");
 
-        scripts.Add("(대충 레벨3 몬스터(1마리)를 보고 강력한 적이 있다는 경고 + 물 웅덩이가 오염되서 접근하지 말라는 경고 + 다 잡으면 아래 길로 가보자는 내용도 넣을건데 LV.3 몬스터가 이상함)");
+        scripts.Add("앗… 여긴 더 강력한 몬스터가 있어! 어둠의 마녀… 꽤 힘을 썼는걸?");
+        scripts.Add("저 몬스터는 뭐야? 책에서도 한 번도 보지 못 한거 같은데…");
+        scripts.Add("그리고 이 동굴, 예전에 한 번도 보지 못한 동굴인데 이렇게 깊다고?");
+        scripts.Add("여튼, 저 몬스터는 아까 층의 동굴 몬스터보다 더 높은 내구도를 가지고 있어! 처리하는데 많은 시간이 걸릴 거야.");
+        scripts.Add("걱정 마, 근성이야말로 내 자랑거리니까!");
+        scripts.Add("좋아! 그리고 저 물 근처는 오염된거 같아... 조심해!");
 
         // 일반 코드
         nextBtn.onClick.AddListener(nextScript);
@@ -47,7 +62,7 @@ public class Donggul2_Start : MonoBehaviour
 
     void nextScript()
     {
-        if (checkScriptLine < 0)
+        if (checkScriptLine < 5)
         {
             ++checkScriptLine;
             scriptObj.text = "";

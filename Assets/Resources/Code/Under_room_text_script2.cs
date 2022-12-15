@@ -20,17 +20,41 @@ public class Under_room_text_script2 : MonoBehaviour
     public GameObject characterImg;
     public Image portraitImg;
 
+    public GameObject Lamp_light;
+    public GameObject Player_Flash_light;
+    public GameObject Player_Lamp_light;
+
     // Start is called before the first frame update
     void Start()
     {
         portraitImg = characterImg.GetComponent<Image>();
         // 스크립트 작성하는 곳
+        names.Add("???");
         names.Add("주인공");
+        names.Add("아네모네");
+        names.Add("주인공");
+        names.Add("아네모네");
+        names.Add("아네모네");
+        names.Add("주인공");
+        names.Add("나레이션");
 
+        portraits.Add("Images/Portrait_empty");
+        portraits.Add("Images/Hero_help");
+        portraits.Add("Images/Portrait_empty");
         portraits.Add("Images/Hero_common");
+        portraits.Add("Images/Portrait_empty");
+        portraits.Add("Images/Portrait_empty");
+        portraits.Add("Images/Hero_common");
+        portraits.Add("Images/Portrait_empty");
 
-        scripts.Add("(대충 요정이 자기소개하고 \"너한테 힘을 줄게!\"하는 내용 + 밖에 몬스터 잡아보라고 시키는 내용)");
-
+        scripts.Add("사람… 아니 요정 살려! 여기 요정 있어요!");
+        scripts.Add("뭐야! 여기엔 나밖에 없는데… 설마 귀신?");
+        scripts.Add("네 앞에 안보여? 나야 나, 아네모네! 지금 밖에 빛의 가호가 많이 약해졌지?");
+        scripts.Add("무… 무슨! 너는 누구고 이 사태에 대해서 어떻게 알고 있는거야?");
+        scripts.Add("난 빛의 요정 아네모네, 날 여기서 내보내 주면 이 사태에 대해서 자세하게 알려줄게!");
+        scripts.Add("일단 내 힘을 빌려줄 테니 우선 내 주변의 몬스터를 없애 줘!");
+        scripts.Add("그… 그래, 일단 꺼내 줄게…");
+        scripts.Add("(좌클릭을 통해 공격을 할 수 있습니다.)");
 
         // 일반 코드
         nextBtn.onClick.AddListener(nextScript);
@@ -46,7 +70,7 @@ public class Under_room_text_script2 : MonoBehaviour
 
     void nextScript()
     {
-        if (checkScriptLine < 0)
+        if (checkScriptLine < 7)
         {
             ++checkScriptLine;
             scriptObj.text = "";
@@ -66,6 +90,9 @@ public class Under_room_text_script2 : MonoBehaviour
             scriptObj.gameObject.SetActive(false);
             nextStoryBtn.SetActive(false);
             Player_Script.is_script_time = false;
+            Lamp_light.SetActive(false);
+            Player_Flash_light.SetActive(true);
+            Player_Lamp_light.SetActive(true);
         }
     }
 

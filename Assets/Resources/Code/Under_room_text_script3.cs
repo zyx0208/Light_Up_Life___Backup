@@ -25,11 +25,26 @@ public class Under_room_text_script3 : MonoBehaviour
     {
         portraitImg = characterImg.GetComponent<Image>();
         // 스크립트 작성하는 곳
+        names.Add("아네모네");
+        names.Add("나레이션");
         names.Add("주인공");
+        names.Add("아네모네");
+        names.Add("주인공");
+        names.Add("아네모네");
 
+        portraits.Add("Images/Portrait_empty");
+        portraits.Add("Images/Portrait_empty");
         portraits.Add("Images/Hero_common");
+        portraits.Add("Images/Portrait_empty");
+        portraits.Add("Images/Hero_common");
+        portraits.Add("Images/Portrait_empty");
 
-        scripts.Add("(대충 요정이 \"해냈구나!\"하면서 칭찬해주고, 왔던 계단 통해서 다시 밖으로 나오라는 내용)");
+        scripts.Add("대단한데? 내 힘을 이렇게나 잘 다루다니… 여튼, 내가 지금 이 상황을 설명해 줄게!");
+        scripts.Add("그렇게 아네모네는 주인공에게 지금의 사태에 대해서 자세하게 설명해 준다.");
+        scripts.Add("아니… 그렇다면 이 모든 게 어둠의 마녀가 일으킨 짓이라고?");
+        scripts.Add("그래, 우리 둘이 힘을 합쳐 어둠의 마녀를 봉인시키면 예전처럼 돌아갈 수 있어!");
+        scripts.Add("오케이, 나 노력해 볼게!");
+        scripts.Add("좋았어! 일단 이 지하실에서 나가자… 먼지가 너무 날린다…");
 
 
         // 일반 코드
@@ -46,7 +61,7 @@ public class Under_room_text_script3 : MonoBehaviour
 
     void nextScript()
     {
-        if (checkScriptLine < 0)
+        if (checkScriptLine < 5)
         {
             ++checkScriptLine;
             scriptObj.text = "";
