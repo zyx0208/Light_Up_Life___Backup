@@ -80,16 +80,24 @@ public class Player_Script : MonoBehaviour
             if (move != Vector3.zero) animator.SetBool("isWalk", true);
             else animator.SetBool("isWalk", false);
 
+            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+            RaycastHit hit;
+            Vector3 vector;
+            if (Physics.Raycast(ray, out hit, Mathf.Infinity))
+            {
+                vector= new Vector3(hit.point.x, transform.position.y, hit.point.z) - transform.position;
+                transform.forward = vector;
+            }
+
             if (move != Vector3.zero)
             {
                 gameObject.transform.forward = move;
-                Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-                RaycastHit hit;
                 if (Physics.Raycast(ray, out hit, Mathf.Infinity))
                 {
-                    Vector3 vector = new Vector3(hit.point.x, transform.position.y, hit.point.z) - transform.position;
+                    vector = new Vector3(hit.point.x, transform.position.y, hit.point.z) - transform.position;
                     transform.forward = vector;
                 }
+
             }
 
             playerVelocity.y += gravityValue * Time.deltaTime;
@@ -112,7 +120,7 @@ public class Player_Script : MonoBehaviour
                 {
                     
                     Instantiate(bullet, new Vector3(this.transform.position.x, this.transform.position.y + 0.5f, this.transform.position.z), this.transform.rotation);
-                    bulletSound.Play();
+                    //bulletSound.Play();
                     timer = AttackCooldown;
                 }
             }
