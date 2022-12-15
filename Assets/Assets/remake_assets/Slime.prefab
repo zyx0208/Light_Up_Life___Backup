@@ -48,7 +48,7 @@ GameObject:
   - component: {fileID: 1090610234418011763}
   - component: {fileID: 2867228263449868215}
   - component: {fileID: 2867228263449868216}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Slime
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -62,7 +62,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1090293006707035756}
-  m_LocalRotation: {x: -0, y: 0.58761024, z: -0, w: 0.8091442}
+  m_LocalRotation: {x: 0, y: 0.5876088, z: 0, w: 0.8091452}
   m_LocalPosition: {x: 74.33, y: 2.693, z: 2.79}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0

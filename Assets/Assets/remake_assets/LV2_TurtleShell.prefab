@@ -267,7 +267,7 @@ GameObject:
   - component: {fileID: 435647197743444359}
   - component: {fileID: 7789589054436190298}
   - component: {fileID: 7038570453831891824}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: LV2_TurtleShell
   m_TagString: Enemy
   m_Icon: {fileID: 0}

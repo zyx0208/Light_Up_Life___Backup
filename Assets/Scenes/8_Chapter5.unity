@@ -134,6 +134,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PP_Forest_Mountain_Moss_01 (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 200864487664385347, guid: 512b72c73a22e904d87662ebca8eb1e1, type: 3}
+      propertyPath: m_Layer
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 685195320120420345, guid: 512b72c73a22e904d87662ebca8eb1e1, type: 3}
       propertyPath: m_RootOrder
       value: 31
@@ -211,6 +215,10 @@ PrefabInstance:
     - target: {fileID: 200864487664385347, guid: 512b72c73a22e904d87662ebca8eb1e1, type: 3}
       propertyPath: m_Name
       value: PP_Forest_Mountain_Moss_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 200864487664385347, guid: 512b72c73a22e904d87662ebca8eb1e1, type: 3}
+      propertyPath: m_Layer
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 685195320120420345, guid: 512b72c73a22e904d87662ebca8eb1e1, type: 3}
       propertyPath: m_RootOrder
@@ -434,7 +442,7 @@ GameObject:
   - component: {fileID: 117342671}
   - component: {fileID: 117342670}
   - component: {fileID: 117342669}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Cube (13)
   m_TagString: Walls
   m_Icon: {fileID: 0}
@@ -531,7 +539,7 @@ GameObject:
   - component: {fileID: 147170687}
   - component: {fileID: 147170686}
   - component: {fileID: 147170685}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Cube (3)
   m_TagString: Walls
   m_Icon: {fileID: 0}
@@ -683,6 +691,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mountain 1 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 6330053009667153852, guid: 87b1a4ec87dd8eb4fb00818956f8c7bf, type: 3}
+      propertyPath: m_Layer
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 87b1a4ec87dd8eb4fb00818956f8c7bf, type: 3}
 --- !u!4 &149323848 stripped
@@ -830,7 +842,7 @@ GameObject:
   - component: {fileID: 158638713}
   - component: {fileID: 158638712}
   - component: {fileID: 158638711}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Cube (4)
   m_TagString: Walls
   m_Icon: {fileID: 0}
@@ -1033,6 +1045,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PP_Forest_Mountain_Moss_01 (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 200864487664385347, guid: 512b72c73a22e904d87662ebca8eb1e1, type: 3}
+      propertyPath: m_Layer
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 685195320120420345, guid: 512b72c73a22e904d87662ebca8eb1e1, type: 3}
       propertyPath: m_RootOrder
       value: 30
@@ -1166,6 +1182,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PP_Forest_Mountain_Moss_01 (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 200864487664385347, guid: 512b72c73a22e904d87662ebca8eb1e1, type: 3}
+      propertyPath: m_Layer
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 685195320120420345, guid: 512b72c73a22e904d87662ebca8eb1e1, type: 3}
       propertyPath: m_RootOrder
       value: 32
@@ -1243,6 +1263,10 @@ PrefabInstance:
     - target: {fileID: 200864487664385347, guid: 512b72c73a22e904d87662ebca8eb1e1, type: 3}
       propertyPath: m_Name
       value: PP_Forest_Mountain_Moss_01 (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 200864487664385347, guid: 512b72c73a22e904d87662ebca8eb1e1, type: 3}
+      propertyPath: m_Layer
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 685195320120420345, guid: 512b72c73a22e904d87662ebca8eb1e1, type: 3}
       propertyPath: m_RootOrder
@@ -1491,6 +1515,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PP_Forest_Mountain_Moss_01 (16)
       objectReference: {fileID: 0}
+    - target: {fileID: 200864487664385347, guid: 512b72c73a22e904d87662ebca8eb1e1, type: 3}
+      propertyPath: m_Layer
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 685195320120420345, guid: 512b72c73a22e904d87662ebca8eb1e1, type: 3}
       propertyPath: m_RootOrder
       value: 38
@@ -1645,6 +1673,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PP_Forest_Mountain_Moss_01 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 200864487664385347, guid: 512b72c73a22e904d87662ebca8eb1e1, type: 3}
+      propertyPath: m_Layer
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 685195320120420345, guid: 512b72c73a22e904d87662ebca8eb1e1, type: 3}
       propertyPath: m_RootOrder
       value: 18
@@ -1722,6 +1754,10 @@ PrefabInstance:
     - target: {fileID: 6795158225397203845, guid: 985c3c522ee33b741aab32c7e218ad76, type: 3}
       propertyPath: m_Name
       value: Canyon (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6795158225397203845, guid: 985c3c522ee33b741aab32c7e218ad76, type: 3}
+      propertyPath: m_Layer
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7017611737243909318, guid: 985c3c522ee33b741aab32c7e218ad76, type: 3}
       propertyPath: m_Materials.Array.data[1]
@@ -1867,6 +1903,10 @@ PrefabInstance:
     - target: {fileID: 200864487664385347, guid: 512b72c73a22e904d87662ebca8eb1e1, type: 3}
       propertyPath: m_Name
       value: PP_Forest_Mountain_Moss_01 (20)
+      objectReference: {fileID: 0}
+    - target: {fileID: 200864487664385347, guid: 512b72c73a22e904d87662ebca8eb1e1, type: 3}
+      propertyPath: m_Layer
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 685195320120420345, guid: 512b72c73a22e904d87662ebca8eb1e1, type: 3}
       propertyPath: m_RootOrder
@@ -2021,6 +2061,10 @@ PrefabInstance:
     - target: {fileID: 200864487664385347, guid: 512b72c73a22e904d87662ebca8eb1e1, type: 3}
       propertyPath: m_Name
       value: PP_Forest_Mountain_Moss_01 (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 200864487664385347, guid: 512b72c73a22e904d87662ebca8eb1e1, type: 3}
+      propertyPath: m_Layer
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 685195320120420345, guid: 512b72c73a22e904d87662ebca8eb1e1, type: 3}
       propertyPath: m_RootOrder
@@ -2216,6 +2260,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PP_Forest_Mountain_Moss_01 (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 200864487664385347, guid: 512b72c73a22e904d87662ebca8eb1e1, type: 3}
+      propertyPath: m_Layer
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 685195320120420345, guid: 512b72c73a22e904d87662ebca8eb1e1, type: 3}
       propertyPath: m_RootOrder
       value: 27
@@ -2292,7 +2340,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 528105075}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: tumyung_Wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2342,7 +2390,7 @@ GameObject:
   - component: {fileID: 552152887}
   - component: {fileID: 552152886}
   - component: {fileID: 552152885}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Cube (2)
   m_TagString: Walls
   m_Icon: {fileID: 0}
@@ -2439,7 +2487,7 @@ GameObject:
   - component: {fileID: 562300570}
   - component: {fileID: 562300569}
   - component: {fileID: 562300568}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Cube (7)
   m_TagString: Walls
   m_Icon: {fileID: 0}
@@ -2692,7 +2740,7 @@ GameObject:
   - component: {fileID: 609278271}
   - component: {fileID: 609278270}
   - component: {fileID: 609278269}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Cube (15)
   m_TagString: Walls
   m_Icon: {fileID: 0}
@@ -2831,6 +2879,10 @@ PrefabInstance:
     - target: {fileID: 6330053009667153852, guid: 87b1a4ec87dd8eb4fb00818956f8c7bf, type: 3}
       propertyPath: m_Name
       value: Mountain 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6330053009667153852, guid: 87b1a4ec87dd8eb4fb00818956f8c7bf, type: 3}
+      propertyPath: m_Layer
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 87b1a4ec87dd8eb4fb00818956f8c7bf, type: 3}
@@ -3005,6 +3057,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rock1
       objectReference: {fileID: 0}
+    - target: {fileID: 9163304318678429051, guid: ace2f584deceb0b4d93d1742037d3ba4, type: 3}
+      propertyPath: m_Layer
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ace2f584deceb0b4d93d1742037d3ba4, type: 3}
 --- !u!4 &694019839 stripped
@@ -3103,7 +3159,7 @@ GameObject:
   - component: {fileID: 759853516}
   - component: {fileID: 759853515}
   - component: {fileID: 759853514}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Cube (10)
   m_TagString: Walls
   m_Icon: {fileID: 0}
@@ -3251,6 +3307,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rock4 (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 4078993391910743013, guid: fa53c08955000804793472d5c7cf87ea, type: 3}
+      propertyPath: m_Layer
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fa53c08955000804793472d5c7cf87ea, type: 3}
 --- !u!4 &763780007 stripped
@@ -3321,6 +3381,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rock4 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 4078993391910743013, guid: fa53c08955000804793472d5c7cf87ea, type: 3}
+      propertyPath: m_Layer
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fa53c08955000804793472d5c7cf87ea, type: 3}
 --- !u!4 &818035746 stripped
@@ -3338,6 +3402,10 @@ PrefabInstance:
     - target: {fileID: 200864487664385347, guid: 512b72c73a22e904d87662ebca8eb1e1, type: 3}
       propertyPath: m_Name
       value: PP_Forest_Mountain_Moss_01 (17)
+      objectReference: {fileID: 0}
+    - target: {fileID: 200864487664385347, guid: 512b72c73a22e904d87662ebca8eb1e1, type: 3}
+      propertyPath: m_Layer
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 685195320120420345, guid: 512b72c73a22e904d87662ebca8eb1e1, type: 3}
       propertyPath: m_RootOrder
@@ -3527,6 +3595,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rock4 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 4078993391910743013, guid: fa53c08955000804793472d5c7cf87ea, type: 3}
+      propertyPath: m_Layer
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fa53c08955000804793472d5c7cf87ea, type: 3}
 --- !u!4 &859834416 stripped
@@ -3605,6 +3677,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rock4 (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 4078993391910743013, guid: fa53c08955000804793472d5c7cf87ea, type: 3}
+      propertyPath: m_Layer
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fa53c08955000804793472d5c7cf87ea, type: 3}
 --- !u!1 &862882873
@@ -3619,7 +3695,7 @@ GameObject:
   - component: {fileID: 862882877}
   - component: {fileID: 862882876}
   - component: {fileID: 862882875}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Cube (14)
   m_TagString: Walls
   m_Icon: {fileID: 0}
@@ -3714,6 +3790,10 @@ PrefabInstance:
     - target: {fileID: 200864487664385347, guid: 512b72c73a22e904d87662ebca8eb1e1, type: 3}
       propertyPath: m_Name
       value: PP_Forest_Mountain_Moss_01 (19)
+      objectReference: {fileID: 0}
+    - target: {fileID: 200864487664385347, guid: 512b72c73a22e904d87662ebca8eb1e1, type: 3}
+      propertyPath: m_Layer
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 685195320120420345, guid: 512b72c73a22e904d87662ebca8eb1e1, type: 3}
       propertyPath: m_RootOrder
@@ -3903,6 +3983,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Canyon (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 6795158225397203845, guid: 985c3c522ee33b741aab32c7e218ad76, type: 3}
+      propertyPath: m_Layer
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 7017611737243909318, guid: 985c3c522ee33b741aab32c7e218ad76, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -4024,6 +4108,10 @@ PrefabInstance:
     - target: {fileID: 4078993391910743013, guid: fa53c08955000804793472d5c7cf87ea, type: 3}
       propertyPath: m_Name
       value: Rock4 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4078993391910743013, guid: fa53c08955000804793472d5c7cf87ea, type: 3}
+      propertyPath: m_Layer
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fa53c08955000804793472d5c7cf87ea, type: 3}
@@ -4363,6 +4451,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rock4 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 4078993391910743013, guid: fa53c08955000804793472d5c7cf87ea, type: 3}
+      propertyPath: m_Layer
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fa53c08955000804793472d5c7cf87ea, type: 3}
 --- !u!4 &1036370429 stripped
@@ -4382,7 +4474,7 @@ GameObject:
   - component: {fileID: 1107302930}
   - component: {fileID: 1107302929}
   - component: {fileID: 1107302928}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Cube (5)
   m_TagString: Walls
   m_Icon: {fileID: 0}
@@ -4478,6 +4570,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PP_Forest_Mountain_Moss_01 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 200864487664385347, guid: 512b72c73a22e904d87662ebca8eb1e1, type: 3}
+      propertyPath: m_Layer
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 685195320120420345, guid: 512b72c73a22e904d87662ebca8eb1e1, type: 3}
       propertyPath: m_RootOrder
       value: 19
@@ -4555,6 +4651,10 @@ PrefabInstance:
     - target: {fileID: 6795158225397203845, guid: 985c3c522ee33b741aab32c7e218ad76, type: 3}
       propertyPath: m_Name
       value: Canyon
+      objectReference: {fileID: 0}
+    - target: {fileID: 6795158225397203845, guid: 985c3c522ee33b741aab32c7e218ad76, type: 3}
+      propertyPath: m_Layer
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7017611737243909318, guid: 985c3c522ee33b741aab32c7e218ad76, type: 3}
       propertyPath: m_Materials.Array.data[1]
@@ -4670,6 +4770,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rock5
       objectReference: {fileID: 0}
+    - target: {fileID: 9131014033862064241, guid: 9513e6747be1be74e84fad205fd171c6, type: 3}
+      propertyPath: m_Layer
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9513e6747be1be74e84fad205fd171c6, type: 3}
 --- !u!4 &1189052810 stripped
@@ -4687,6 +4791,10 @@ PrefabInstance:
     - target: {fileID: 200864487664385347, guid: 512b72c73a22e904d87662ebca8eb1e1, type: 3}
       propertyPath: m_Name
       value: PP_Forest_Mountain_Moss_01 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 200864487664385347, guid: 512b72c73a22e904d87662ebca8eb1e1, type: 3}
+      propertyPath: m_Layer
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 685195320120420345, guid: 512b72c73a22e904d87662ebca8eb1e1, type: 3}
       propertyPath: m_RootOrder
@@ -4861,7 +4969,7 @@ GameObject:
   - component: {fileID: 1211741900}
   - component: {fileID: 1211741899}
   - component: {fileID: 1211741898}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Cube (12)
   m_TagString: Walls
   m_Icon: {fileID: 0}
@@ -5008,6 +5116,10 @@ PrefabInstance:
     - target: {fileID: 6330053009667153852, guid: a008918f2d4272845bdbbae611dabfbc, type: 3}
       propertyPath: m_Name
       value: Mountain 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6330053009667153852, guid: a008918f2d4272845bdbbae611dabfbc, type: 3}
+      propertyPath: m_Layer
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a008918f2d4272845bdbbae611dabfbc, type: 3}
@@ -5435,7 +5547,7 @@ GameObject:
   - component: {fileID: 1320218750}
   - component: {fileID: 1320218749}
   - component: {fileID: 1320218748}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Cube
   m_TagString: Walls
   m_Icon: {fileID: 0}
@@ -5530,6 +5642,10 @@ PrefabInstance:
     - target: {fileID: 200864487664385347, guid: 512b72c73a22e904d87662ebca8eb1e1, type: 3}
       propertyPath: m_Name
       value: PP_Forest_Mountain_Moss_01 (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 200864487664385347, guid: 512b72c73a22e904d87662ebca8eb1e1, type: 3}
+      propertyPath: m_Layer
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 685195320120420345, guid: 512b72c73a22e904d87662ebca8eb1e1, type: 3}
       propertyPath: m_RootOrder
@@ -5653,6 +5769,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rock2
       objectReference: {fileID: 0}
+    - target: {fileID: 5758501535224576779, guid: 1e5dd4dd30dd72c4299494170788c2f0, type: 3}
+      propertyPath: m_Layer
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1e5dd4dd30dd72c4299494170788c2f0, type: 3}
 --- !u!4 &1329415096 stripped
@@ -5670,6 +5790,10 @@ PrefabInstance:
     - target: {fileID: 200864487664385347, guid: 512b72c73a22e904d87662ebca8eb1e1, type: 3}
       propertyPath: m_Name
       value: PP_Forest_Mountain_Moss_01 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 200864487664385347, guid: 512b72c73a22e904d87662ebca8eb1e1, type: 3}
+      propertyPath: m_Layer
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 685195320120420345, guid: 512b72c73a22e904d87662ebca8eb1e1, type: 3}
       propertyPath: m_RootOrder
@@ -5793,6 +5917,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mountain 3
       objectReference: {fileID: 0}
+    - target: {fileID: 6330053009667153852, guid: 6baa815c0a819ba4aa43eeea7a177a2a, type: 3}
+      propertyPath: m_Layer
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6baa815c0a819ba4aa43eeea7a177a2a, type: 3}
 --- !u!4 &1381403141 stripped
@@ -5871,6 +5999,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rock4
       objectReference: {fileID: 0}
+    - target: {fileID: 4078993391910743013, guid: fa53c08955000804793472d5c7cf87ea, type: 3}
+      propertyPath: m_Layer
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fa53c08955000804793472d5c7cf87ea, type: 3}
 --- !u!4 &1384938525 stripped
@@ -5888,6 +6020,10 @@ PrefabInstance:
     - target: {fileID: 200864487664385347, guid: 512b72c73a22e904d87662ebca8eb1e1, type: 3}
       propertyPath: m_Name
       value: PP_Forest_Mountain_Moss_01 (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 200864487664385347, guid: 512b72c73a22e904d87662ebca8eb1e1, type: 3}
+      propertyPath: m_Layer
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 685195320120420345, guid: 512b72c73a22e904d87662ebca8eb1e1, type: 3}
       propertyPath: m_RootOrder
@@ -6027,6 +6163,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rock4 (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 4078993391910743013, guid: fa53c08955000804793472d5c7cf87ea, type: 3}
+      propertyPath: m_Layer
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fa53c08955000804793472d5c7cf87ea, type: 3}
 --- !u!4 &1407084103 stripped
@@ -6126,7 +6266,7 @@ GameObject:
   - component: {fileID: 1514287032}
   - component: {fileID: 1514287031}
   - component: {fileID: 1514287030}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Cube (8)
   m_TagString: Walls
   m_Icon: {fileID: 0}
@@ -6307,7 +6447,7 @@ GameObject:
   - component: {fileID: 1597962083}
   - component: {fileID: 1597962082}
   - component: {fileID: 1597962081}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Cube (6)
   m_TagString: Walls
   m_Icon: {fileID: 0}
@@ -6404,7 +6544,7 @@ GameObject:
   - component: {fileID: 1606966647}
   - component: {fileID: 1606966646}
   - component: {fileID: 1606966645}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Cube (9)
   m_TagString: Walls
   m_Icon: {fileID: 0}
@@ -6556,6 +6696,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mountain 1 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 6330053009667153852, guid: 87b1a4ec87dd8eb4fb00818956f8c7bf, type: 3}
+      propertyPath: m_Layer
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 87b1a4ec87dd8eb4fb00818956f8c7bf, type: 3}
 --- !u!4 &1627868314 stripped
@@ -6626,6 +6770,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mountain 3 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 6330053009667153852, guid: 6baa815c0a819ba4aa43eeea7a177a2a, type: 3}
+      propertyPath: m_Layer
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 8434171449674927826, guid: 6baa815c0a819ba4aa43eeea7a177a2a, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -6653,7 +6801,7 @@ GameObject:
   - component: {fileID: 1652261198}
   - component: {fileID: 1652261197}
   - component: {fileID: 1652261196}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Cube (1)
   m_TagString: Walls
   m_Icon: {fileID: 0}
@@ -6782,6 +6930,10 @@ PrefabInstance:
     - target: {fileID: 200864487664385347, guid: 512b72c73a22e904d87662ebca8eb1e1, type: 3}
       propertyPath: m_Name
       value: PP_Forest_Mountain_Moss_01 (18)
+      objectReference: {fileID: 0}
+    - target: {fileID: 200864487664385347, guid: 512b72c73a22e904d87662ebca8eb1e1, type: 3}
+      propertyPath: m_Layer
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 685195320120420345, guid: 512b72c73a22e904d87662ebca8eb1e1, type: 3}
       propertyPath: m_RootOrder
@@ -6974,7 +7126,7 @@ GameObject:
   - component: {fileID: 1778530297}
   - component: {fileID: 1778530296}
   - component: {fileID: 1778530295}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Cube (11)
   m_TagString: Walls
   m_Icon: {fileID: 0}
@@ -7299,6 +7451,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Canyon (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 6795158225397203845, guid: 985c3c522ee33b741aab32c7e218ad76, type: 3}
+      propertyPath: m_Layer
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 7017611737243909318, guid: 985c3c522ee33b741aab32c7e218ad76, type: 3}
       propertyPath: m_Materials.Array.data[1]
       value: 
@@ -7447,6 +7603,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PP_Forest_Mountain_Moss_01 (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 200864487664385347, guid: 512b72c73a22e904d87662ebca8eb1e1, type: 3}
+      propertyPath: m_Layer
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 685195320120420345, guid: 512b72c73a22e904d87662ebca8eb1e1, type: 3}
       propertyPath: m_RootOrder
       value: 33
@@ -7524,6 +7684,10 @@ PrefabInstance:
     - target: {fileID: 138836365270009319, guid: 7baba197ce36c92439b423eabaad3737, type: 3}
       propertyPath: m_Name
       value: PP_Meadow_08
+      objectReference: {fileID: 0}
+    - target: {fileID: 138836365270009319, guid: 7baba197ce36c92439b423eabaad3737, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 138836365270009319, guid: 7baba197ce36c92439b423eabaad3737, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -7612,6 +7776,10 @@ PrefabInstance:
       value: Rock3
       objectReference: {fileID: 0}
     - target: {fileID: 1306021603837897437, guid: afb48c0e625f46447b9a07b242038ce1, type: 3}
+      propertyPath: m_Layer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1306021603837897437, guid: afb48c0e625f46447b9a07b242038ce1, type: 3}
       propertyPath: m_TagString
       value: Walls
       objectReference: {fileID: 0}
@@ -7676,6 +7844,10 @@ PrefabInstance:
     - target: {fileID: 200864487664385347, guid: 512b72c73a22e904d87662ebca8eb1e1, type: 3}
       propertyPath: m_Name
       value: PP_Forest_Mountain_Moss_01 (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 200864487664385347, guid: 512b72c73a22e904d87662ebca8eb1e1, type: 3}
+      propertyPath: m_Layer
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 685195320120420345, guid: 512b72c73a22e904d87662ebca8eb1e1, type: 3}
       propertyPath: m_RootOrder
@@ -7754,6 +7926,10 @@ PrefabInstance:
     - target: {fileID: 200864487664385347, guid: 512b72c73a22e904d87662ebca8eb1e1, type: 3}
       propertyPath: m_Name
       value: PP_Forest_Mountain_Moss_01 (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 200864487664385347, guid: 512b72c73a22e904d87662ebca8eb1e1, type: 3}
+      propertyPath: m_Layer
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 685195320120420345, guid: 512b72c73a22e904d87662ebca8eb1e1, type: 3}
       propertyPath: m_RootOrder
