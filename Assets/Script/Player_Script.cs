@@ -83,6 +83,13 @@ public class Player_Script : MonoBehaviour
             if (move != Vector3.zero)
             {
                 gameObject.transform.forward = move;
+                Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+                RaycastHit hit;
+                if (Physics.Raycast(ray, out hit, Mathf.Infinity))
+                {
+                    Vector3 vector = new Vector3(hit.point.x, transform.position.y, hit.point.z) - transform.position;
+                    transform.forward = vector;
+                }
             }
 
             playerVelocity.y += gravityValue * Time.deltaTime;
@@ -90,8 +97,10 @@ public class Player_Script : MonoBehaviour
 
 
             //시점관련
-            Vector3 mPosition = Camera.main.WorldToScreenPoint(this.transform.position); //메인카메라의 위치 정보를 mPosition에 저장
-            this.transform.LookAt(new Vector3(reverse_WASD * (-Input.mousePosition.x + mPosition.x), 0, reverse_WASD * (-Input.mousePosition.y + mPosition.y))); //메인카메라의 위치와 마우스의 위치를 이용하여 마우스 방향을 쳐다보게 설정
+            //Vector3 mPosition = Camera.main.WorldToScreenPoint(this.transform.position); //메인카메라의 위치 정보를 mPosition에 저장
+            //this.transform.LookAt(new Vector3(reverse_WASD * (-Input.mousePosition.x + mPosition.x), 0, reverse_WASD * (-Input.mousePosition.y + mPosition.y))); //메인카메라의 위치와 마우스의 위치를 이용하여 마우스 방향을 쳐다보게 설정
+
+            
 
             if (timer > 0) //타이머가 0초보다 크면 매 프레임마다 타이머가 줄어듦
             {
