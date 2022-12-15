@@ -122,7 +122,7 @@ NavMeshSettings:
     preserveTilesOutsideBounds: 0
     debug:
       m_Flags: 0
-  m_NavMeshData: {fileID: 0}
+  m_NavMeshData: {fileID: 23800000, guid: 8579b43be14c43b44bdbdcbc93589f2e, type: 2}
 --- !u!1001 &614653
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8985,6 +8985,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PP_Meadow_07 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 2357419356555822539, guid: cf22a2db10f09a34495e9f83913738c8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 3169668576073457521, guid: cf22a2db10f09a34495e9f83913738c8, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -17813,6 +17817,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8967300102833948591, guid: 7de4ca47a05bf12469d8eaee4a30bff4, type: 3}
+      propertyPath: Monster
+      value: 
+      objectReference: {fileID: 1090293006707035756, guid: eb2b1518423a35a4ab5390e8978323a7, type: 3}
     - target: {fileID: 8968754788427612305, guid: 7de4ca47a05bf12469d8eaee4a30bff4, type: 3}
       propertyPath: m_Name
       value: Lich
